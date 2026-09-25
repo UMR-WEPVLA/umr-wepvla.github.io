@@ -1,0 +1,215 @@
+{
+  "schema": "rh20t_ply_review_catalog_v1",
+  "frames": [
+    {
+      "cfg": 2,
+      "scene": "task_0001_user_0002_scene_0001_cfg_0002",
+      "frame": 0,
+      "source_color_index": 358,
+      "single_view": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000000_source_000358/single_view.ply",
+      "multiview": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000000_source_000358/multiview.ply",
+      "rgb": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000000_source_000358/rgb.png",
+      "comparison": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000000_source_000358/comparison.png"
+    },
+    {
+      "cfg": 2,
+      "scene": "task_0001_user_0002_scene_0001_cfg_0002",
+      "frame": 77,
+      "source_color_index": 555,
+      "single_view": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000077_source_000555/single_view.ply",
+      "multiview": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000077_source_000555/multiview.ply",
+      "rgb": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000077_source_000555/rgb.png",
+      "comparison": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000077_source_000555/comparison.png"
+    },
+    {
+      "cfg": 2,
+      "scene": "task_0001_user_0002_scene_0001_cfg_0002",
+      "frame": 153,
+      "source_color_index": 755,
+      "single_view": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000153_source_000755/single_view.ply",
+      "multiview": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000153_source_000755/multiview.ply",
+      "rgb": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000153_source_000755/rgb.png",
+      "comparison": "cfg2/task_0001_user_0002_scene_0001_cfg_0002/frame_000153_source_000755/comparison.png"
+    },
+    {
+      "cfg": 2,
+      "scene": "task_0069_user_0014_scene_0009_cfg_0002",
+      "frame": 0,
+      "source_color_index": 30,
+      "single_view": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000000_source_000030/single_view.ply",
+      "multiview": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000000_source_000030/multiview.ply",
+      "rgb": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000000_source_000030/rgb.png",
+      "comparison": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000000_source_000030/comparison.png"
+    },
+    {
+      "cfg": 2,
+      "scene": "task_0069_user_0014_scene_0009_cfg_0002",
+      "frame": 55,
+      "source_color_index": 180,
+      "single_view": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000055_source_000180/single_view.ply",
+      "multiview": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000055_source_000180/multiview.ply",
+      "rgb": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000055_source_000180/rgb.png",
+      "comparison": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000055_source_000180/comparison.png"
+    },
+    {
+      "cfg": 2,
+      "scene": "task_0069_user_0014_scene_0009_cfg_0002",
+      "frame": 110,
+      "source_color_index": 327,
+      "single_view": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000110_source_000327/single_view.ply",
+      "multiview": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000110_source_000327/multiview.ply",
+      "rgb": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000110_source_000327/rgb.png",
+      "comparison": "cfg2/task_0069_user_0014_scene_0009_cfg_0002/frame_000110_source_000327/comparison.png"
+    },
+    {
+      "cfg": 3,
+      "scene": "task_0021_user_0010_scene_0001_cfg_0003",
+      "frame": 0,
+      "source_color_index": 48,
+      "single_view": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000000_source_000048/single_view.ply",
+      "multiview": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000000_source_000048/multiview.ply",
+      "rgb": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000000_source_000048/rgb.png",
+      "comparison": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000000_source_000048/comparison.png"
+    },
+    {
+      "cfg": 3,
+      "scene": "task_0021_user_0010_scene_0001_cfg_0003",
+      "frame": 60,
+      "source_color_index": 198,
+      "single_view": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000060_source_000198/single_view.ply",
+      "multiview": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000060_source_000198/multiview.ply",
+      "rgb": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000060_source_000198/rgb.png",
+      "comparison": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000060_source_000198/comparison.png"
+    },
+    {
+      "cfg": 3,
+      "scene": "task_0021_user_0010_scene_0001_cfg_0003",
+      "frame": 119,
+      "source_color_index": 345,
+      "single_view": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000119_source_000345/single_view.ply",
+      "multiview": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000119_source_000345/multiview.ply",
+      "rgb": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000119_source_000345/rgb.png",
+      "comparison": "cfg3/task_0021_user_0010_scene_0001_cfg_0003/frame_000119_source_000345/comparison.png"
+    },
+    {
+      "cfg": 4,
+      "scene": "task_0013_user_0007_scene_0001_cfg_0004",
+      "frame": 0,
+      "source_color_index": 57,
+      "single_view": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000000_source_000057/single_view.ply",
+      "multiview": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000000_source_000057/multiview.ply",
+      "rgb": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000000_source_000057/rgb.png",
+      "comparison": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000000_source_000057/comparison.png"
+    },
+    {
+      "cfg": 4,
+      "scene": "task_0013_user_0007_scene_0001_cfg_0004",
+      "frame": 50,
+      "source_color_index": 182,
+      "single_view": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000050_source_000182/single_view.ply",
+      "multiview": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000050_source_000182/multiview.ply",
+      "rgb": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000050_source_000182/rgb.png",
+      "comparison": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000050_source_000182/comparison.png"
+    },
+    {
+      "cfg": 4,
+      "scene": "task_0013_user_0007_scene_0001_cfg_0004",
+      "frame": 99,
+      "source_color_index": 304,
+      "single_view": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000099_source_000304/single_view.ply",
+      "multiview": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000099_source_000304/multiview.ply",
+      "rgb": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000099_source_000304/rgb.png",
+      "comparison": "cfg4/task_0013_user_0007_scene_0001_cfg_0004/frame_000099_source_000304/comparison.png"
+    },
+    {
+      "cfg": 5,
+      "scene": "task_0001_user_0007_scene_0001_cfg_0005",
+      "frame": 0,
+      "source_color_index": 0,
+      "single_view": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000000_source_000000/single_view.ply",
+      "multiview": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000000_source_000000/multiview.ply",
+      "rgb": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000000_source_000000/rgb.png",
+      "comparison": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000000_source_000000/comparison.png"
+    },
+    {
+      "cfg": 5,
+      "scene": "task_0001_user_0007_scene_0001_cfg_0005",
+      "frame": 38,
+      "source_color_index": 107,
+      "single_view": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000038_source_000107/single_view.ply",
+      "multiview": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000038_source_000107/multiview.ply",
+      "rgb": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000038_source_000107/rgb.png",
+      "comparison": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000038_source_000107/comparison.png"
+    },
+    {
+      "cfg": 5,
+      "scene": "task_0001_user_0007_scene_0001_cfg_0005",
+      "frame": 76,
+      "source_color_index": 222,
+      "single_view": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000076_source_000222/single_view.ply",
+      "multiview": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000076_source_000222/multiview.ply",
+      "rgb": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000076_source_000222/rgb.png",
+      "comparison": "cfg5/task_0001_user_0007_scene_0001_cfg_0005/frame_000076_source_000222/comparison.png"
+    },
+    {
+      "cfg": 6,
+      "scene": "task_0001_user_0014_scene_0001_cfg_0006",
+      "frame": 0,
+      "source_color_index": 49,
+      "single_view": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000000_source_000049/single_view.ply",
+      "multiview": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000000_source_000049/multiview.ply",
+      "rgb": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000000_source_000049/rgb.png",
+      "comparison": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000000_source_000049/comparison.png"
+    },
+    {
+      "cfg": 6,
+      "scene": "task_0001_user_0014_scene_0001_cfg_0006",
+      "frame": 47,
+      "source_color_index": 166,
+      "single_view": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000047_source_000166/single_view.ply",
+      "multiview": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000047_source_000166/multiview.ply",
+      "rgb": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000047_source_000166/rgb.png",
+      "comparison": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000047_source_000166/comparison.png"
+    },
+    {
+      "cfg": 6,
+      "scene": "task_0001_user_0014_scene_0001_cfg_0006",
+      "frame": 93,
+      "source_color_index": 281,
+      "single_view": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000093_source_000281/single_view.ply",
+      "multiview": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000093_source_000281/multiview.ply",
+      "rgb": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000093_source_000281/rgb.png",
+      "comparison": "cfg6/task_0001_user_0014_scene_0001_cfg_0006/frame_000093_source_000281/comparison.png"
+    },
+    {
+      "cfg": 7,
+      "scene": "task_0001_user_0014_scene_0001_cfg_0007",
+      "frame": 0,
+      "source_color_index": 29,
+      "single_view": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000000_source_000029/single_view.ply",
+      "multiview": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000000_source_000029/multiview.ply",
+      "rgb": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000000_source_000029/rgb.png",
+      "comparison": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000000_source_000029/comparison.png"
+    },
+    {
+      "cfg": 7,
+      "scene": "task_0001_user_0014_scene_0001_cfg_0007",
+      "frame": 17,
+      "source_color_index": 71,
+      "single_view": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000017_source_000071/single_view.ply",
+      "multiview": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000017_source_000071/multiview.ply",
+      "rgb": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000017_source_000071/rgb.png",
+      "comparison": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000017_source_000071/comparison.png"
+    },
+    {
+      "cfg": 7,
+      "scene": "task_0001_user_0014_scene_0001_cfg_0007",
+      "frame": 33,
+      "source_color_index": 111,
+      "single_view": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000033_source_000111/single_view.ply",
+      "multiview": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000033_source_000111/multiview.ply",
+      "rgb": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000033_source_000111/rgb.png",
+      "comparison": "cfg7/task_0001_user_0014_scene_0001_cfg_0007/frame_000033_source_000111/comparison.png"
+    }
+  ]
+}

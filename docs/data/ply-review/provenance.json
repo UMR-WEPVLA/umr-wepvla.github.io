@@ -1,0 +1,3394 @@
+{
+  "command": [
+    "script/review_rh20t_pixel_filter.py",
+    "--base",
+    "/opt/data/private/liusong/RH20T/rh20t/liusong_process",
+    "--input-root",
+    "/opt/data/private/liusong/RH20T/extracted",
+    "--config",
+    "server_execution_20260906_streaming_io_v6/conversion_config.json",
+    "--plan",
+    "batch_run_streaming_io_v6_cached_20260906/plan.json",
+    "--run-name",
+    "pixel_filter_review_20260906_v1"
+  ],
+  "config_sha256": "f052a6ae11cb6d5bc23e9b6746dcdca1e9f1ca0fbc7cc10a7c9dda67b4624873",
+  "source_sha256": {
+    "rh20t_batch_progress.py": "3e31947ee03c9dd734f34a4a1a40aaab3a25addcf490da764673596a69fcc105",
+    "render_cfg7_open_gripper_local_axes.py": "f64fe06fe434c0d4bc3959ccbeec32d068f49a8f76a5d20594a4e9cf4259b082",
+    "test_smoke_pipeline.py": "dedf3ea5124a33a7a6ba042061b87614ad761b0e6ac3d7307aafa8199e15a2ed",
+    "build_human_data_catalog.py": "126efee0cf9ee7f65873a756364e9d0f7ffbfa32db1f43f6210eefe4fde74959",
+    "apply_gui_z180_update.py": "add21641f51808a81291010a7b7836707d83d22481f5366e10a0929c77102c66",
+    "rh20t_preprocessed_scene.py": "494c944c6d62451500858610a2a4d33a6cd2c640ac4eaea6a50676297b91d7c4",
+    "generate_cfg7_gripper_y90_candidates.py": "5eecab09d24026677fe66a902e4e273fe1908088d9d4e89bfa5fc3590d2ab93a",
+    "rh20t_lerobot_stats.py": "e4783ad4811472f83324e3873f6f529634c62062cead708b74b4ce4f6f65a9dc",
+    "audit_smoke_test_data.py": "ddb0208d51b6602b034aa302a55293e9ebb1091132b2c7252916e43f4b7857ce",
+    "test_rh20t_task_descriptions.py": "9b56c1431b06508e06d7d5099013fc0f3531ca87d605a7d52b467cd2ce9533c7",
+    "rh20t_workflow.py": "961f5a61ac222b74bc66368da7fd087b2a15db3d0cd6b43fa11140814b150625",
+    "test_rh20t_batch_config.py": "bbce43f2fbc704a5d6b550ede974661e0db3a0c5ae0886b6a998f6c9d3f56b0f",
+    "prepare_hand_laterality_review.py": "ba639839c9577f64bed27564bb562911668c3b0c14b0570a69325367c9b3401e",
+    "inventory_cfg7.py": "aad56b3fdc79cb415df6c27e405bd2dfc87453b231c0517cd3306b902c358723",
+    "rh20t_camera_streams.py": "b28ee22556f801325093c787813043f71accac14638ff3cd5e2c8f3ec5350774",
+    "rh20t_task_descriptions.py": "8ed21c289b73845151270149c9a3659634a642fe9486cf49a92984ff243019b6",
+    "prepare_rh20t_calibration_scene.py": "eeeca489a552ac9a3725538143ffc19358e7644569102efa3d98db9a4814fb96",
+    "annotate_robot_pose_contract.py": "ed4968f634ffefd8bd77d2a1c5f8e520bcbf3ad9e250eba12944bcff2d2e6803",
+    "test_rh20t_contracts.py": "2d868736026a10e07c8f69eceb76b251b433d973a2f1d74288683430059a4504",
+    "generate_cfg7_gripper_local_x90_candidates.py": "395234bef948e5ac041329dfeb145d2752494e58d0bd4b71bea3eeeb7e5fa922",
+    "validate_rh20t_preprocessed_scene.py": "b8f3f06a9d69848a462d6d79bc8e4f40e6f6a278ad7717fe7311be118cda9067",
+    "generate_cfg7_gripper_local_y90_candidates.py": "96b69ba01cb3be6cd924c9b1b16b1d6a44948c726df86b07e27a0f8cba18a07c",
+    "virtual_gripper_geometry.py": "9b834bf997241dcb87e0d888bf76a27bd7ee0ec4dcc545b2f23384ff23f58c1d",
+    "test_rh20t_camera_streams.py": "350ab3e0c88ca8f60c317189557f7f6151716e6a4aea6e6fa9837df3327d1abd",
+    "test_rh20t_temporal_sampling.py": "33f9ac9b4cf1d6257740e804cea48478e1023f164ac0d077383009fac9cf7c24",
+    "repair_rh20t_task_labels.py": "94b652d1ac5d910a50ef9b97d67acd9b37c91465c8057149364e141e0b1b6885",
+    "review_rh20t_pixel_filter.py": "08ca63cc20893cc96abbf694a6b5129053213e0ea388c6e60d4d3c37539bcc5b",
+    "test_rh20t_streaming_io.py": "1094664152a208d594ee61d12192edd2010bd3e9193053260c69638443503d1c",
+    "generate_cfg7_gripper_candidates.py": "1c67248e2adc2d43053a9c697d096571fba0facfe475bb3a0865581c516cf78d",
+    "test_rh20t_command_pose.py": "43bd84271386b795211ae2de74cc6c38991dfba577f448602ddc50e37afb4385",
+    "test_rh20t_stats_histogram.py": "042700e7cfcac27e4f653f2267009e172bdae7ce509a110910c1126dc7a59396",
+    "calibrate_virtual_gripper_live.py": "db451fc31f7b0dfe2b1d7177124713389edeea6ef8e5207f540b553bdd223411",
+    "rh20t_contracts.py": "baf5529f5f0353df60208f62b2a05d6c2f957f41950cec87074e0bc9e0185166",
+    "repair_lerobot_v3_episode_metadata.py": "c860b0fb3df8bdec684d73061a1ba19b6e726d4097f6c44f218b820fe87dea3f",
+    "build_rh20t_smoke_datasets.py": "2d26a4d612cd0a7a579e2b758a25b4302ccd4bd73b6dd5a1a8d86e3f619f57f4",
+    "validate_rh20t_smoke_output.py": "b7b3a58e43c6c83dd3cb30f0573c7fb4f2556a80c15f588e6036724858d76dce",
+    "test_rh20t_inventory_reuse.py": "a0250b1b5d41b18eddebf0cfe34fc7ff013a74631e8024d39444e84da49c1373",
+    "audit_rh20t_command_frames.py": "9fd93a0e14c2a970c38c9a1fc4d958e1c78e49c9ee149b9589c66e9437c0f002",
+    "compute_rh20t_lerobot_stats.py": "68a72dc87f8c6e84dc0ed61673ef5a5699a29876df8689eb8001170cf4daa20f",
+    "test_rh20t_parallel_workflow.py": "afac7377e82fd67cf45d75c220cf21fe50f2da00ee5204d9a12d672c7fcd84de",
+    "rh20t_temporal_sampling.py": "1ab98873de66381136647448322881e79afaef4cd6b853a0061a9c814c1863ed",
+    "prepare_rh20t_calibration_scenes_batch.py": "29e54e9fad04efdaa18c66afe6c7830ac1cdca93cd6b86384799dd93ee25a197",
+    "test_rh20t_release_source.py": "e2440820f3533bc6fa08f67f355dcbf0e66a89c6a56ca53ec6de9a32c0aa4171",
+    "rh20t_batch_config.py": "8c361322644afa59ccf94f89389910c54d0c04b020f8833b1d7c09219d388354",
+    "rh20t_multiview.py": "aef1df03f033cec0208434f3a0ef4e18f4c0e3786daf57c3164d6090a29bba2c",
+    "annotate_virtual_gripper.py": "48d1045a7600d2a9248b172ea5a684ed1ea8e45f644d370aad3393281e1a1618",
+    "rh20t_command_pose.py": "0f5dfaf1989e8d47ff060d7ab277b83d21ba4a6201eeccf7ffab8293223eaac9"
+  },
+  "episodes": [
+    {
+      "cfg": 2,
+      "scene": "task_0001_user_0002_scene_0001_cfg_0002",
+      "output": "/opt/data/private/liusong/RH20T/rh20t/liusong_process/cfg2/pixel_filter_review_20260906_v1/task_0001_user_0002_scene_0001_cfg_0002",
+      "frame_count": 154,
+      "timings": {
+        "setup_seconds": 0.5110308961011469,
+        "decode_seconds": 6.6309931834694,
+        "filter_seconds": 2.779106750851497,
+        "gripper_seconds": 0.3468035242985934,
+        "ply_write_seconds": 0.37762542394921184,
+        "full_episode_preprocessing_seconds": 10.653692760039121,
+        "local_fsync_seconds": 0.4159367890097201,
+        "full_episode_including_fsync_seconds": 11.069629549048841,
+        "three_frame_controls_and_review_export_seconds": 11.376586922211573
+      },
+      "examples": [
+        {
+          "frame": 0,
+          "source_color_index": 358,
+          "directory": "frame_000000_source_000358",
+          "single_scene_points": 42906,
+          "single_unique_xyz": 42906,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 16417,
+          "baseline_diagnostics": {
+            "frame": 0,
+            "source_color_index": 358,
+            "target_timestamp_ms": 1629444341164,
+            "primary_camera": "036422060215",
+            "static_cameras_used": {
+              "036422060215": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_036422060215/depth/1629444341164.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 358,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 47978,
+                "neighbor_consistent_depth_pixels": 46848,
+                "artifact_free_depth_pixels": 45445,
+                "pre_spatial_filter_points": 45445,
+                "spatial_filter_input_points": 45445,
+                "spatial_filter_input_sampled": false,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 45445,
+                "post_eef_filter_points": 42906,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "105422061350": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_105422061350/depth/1629444341147.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 359,
+                "color_timestamp_error_ms": 17,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 50018,
+                "neighbor_consistent_depth_pixels": 49829,
+                "artifact_free_depth_pixels": 49136,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 49136
+              },
+              "104122063678": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_104122063678/depth/1629444341178.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 368,
+                "color_timestamp_error_ms": 14,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52242,
+                "neighbor_consistent_depth_pixels": 51906,
+                "artifact_free_depth_pixels": 51319,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51319
+              },
+              "104122061850": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_104122061850/depth/1629444341201.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 355,
+                "color_timestamp_error_ms": 37,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52612,
+                "neighbor_consistent_depth_pixels": 52350,
+                "artifact_free_depth_pixels": 51971,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51971
+              },
+              "037522062165": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_037522062165/depth/1629444341134.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 236,
+                "color_timestamp_error_ms": 30,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52177,
+                "neighbor_consistent_depth_pixels": 51610,
+                "artifact_free_depth_pixels": 50856,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 50856
+              },
+              "104422070044": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_104422070044/depth/1629444341182.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 200,
+                "color_timestamp_error_ms": 18,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 8270,
+                "neighbor_consistent_depth_pixels": 7773,
+                "artifact_free_depth_pixels": 6222,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 6222
+              }
+            },
+            "static_cameras_skipped": {
+              "f0461559": "no synchronized depth frame"
+            },
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 27680,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019994474947452545,
+            "nearest_query_points_by_camera": [
+              50000,
+              30771,
+              26764,
+              23857,
+              22358
+            ]
+          }
+        },
+        {
+          "frame": 77,
+          "source_color_index": 555,
+          "directory": "frame_000077_source_000555",
+          "single_scene_points": 44560,
+          "single_unique_xyz": 44560,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 17101,
+          "baseline_diagnostics": {
+            "frame": 77,
+            "source_color_index": 555,
+            "target_timestamp_ms": 1629444355967,
+            "primary_camera": "036422060215",
+            "static_cameras_used": {
+              "036422060215": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_036422060215/depth/1629444355967.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 555,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 47136,
+                "neighbor_consistent_depth_pixels": 46198,
+                "artifact_free_depth_pixels": 45107,
+                "pre_spatial_filter_points": 45107,
+                "spatial_filter_input_points": 45107,
+                "spatial_filter_input_sampled": false,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 45107,
+                "post_eef_filter_points": 44560,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0461559": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_f0461559/depth/1629444355952.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 624,
+                "color_timestamp_error_ms": 15,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 35887,
+                "neighbor_consistent_depth_pixels": 35537,
+                "artifact_free_depth_pixels": 35286,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 35286
+              },
+              "105422061350": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_105422061350/depth/1629444355986.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 558,
+                "color_timestamp_error_ms": 19,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52572,
+                "neighbor_consistent_depth_pixels": 52411,
+                "artifact_free_depth_pixels": 51964,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51964
+              },
+              "104122063678": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_104122063678/depth/1629444355938.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 559,
+                "color_timestamp_error_ms": 29,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52605,
+                "neighbor_consistent_depth_pixels": 52304,
+                "artifact_free_depth_pixels": 51721,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51721
+              },
+              "104122061850": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_104122061850/depth/1629444355941.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 549,
+                "color_timestamp_error_ms": 26,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52032,
+                "neighbor_consistent_depth_pixels": 51744,
+                "artifact_free_depth_pixels": 51233,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51233
+              },
+              "037522062165": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_037522062165/depth/1629444355961.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 403,
+                "color_timestamp_error_ms": 6,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 49219,
+                "neighbor_consistent_depth_pixels": 48676,
+                "artifact_free_depth_pixels": 47666,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 47666
+              },
+              "104422070044": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_104422070044/depth/1629444355961.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 306,
+                "color_timestamp_error_ms": 6,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 53062,
+                "neighbor_consistent_depth_pixels": 52544,
+                "artifact_free_depth_pixels": 51996,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51996
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 28408,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019985411316156387,
+            "nearest_query_points_by_camera": [
+              50000,
+              50000,
+              30488,
+              25920,
+              24395,
+              23462
+            ]
+          }
+        },
+        {
+          "frame": 153,
+          "source_color_index": 755,
+          "directory": "frame_000153_source_000755",
+          "single_scene_points": 43853,
+          "single_unique_xyz": 43853,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 17354,
+          "baseline_diagnostics": {
+            "frame": 153,
+            "source_color_index": 755,
+            "target_timestamp_ms": 1629444370642,
+            "primary_camera": "036422060215",
+            "static_cameras_used": {
+              "036422060215": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_036422060215/depth/1629444370642.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 755,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 46712,
+                "neighbor_consistent_depth_pixels": 45841,
+                "artifact_free_depth_pixels": 44448,
+                "pre_spatial_filter_points": 44448,
+                "spatial_filter_input_points": 44448,
+                "spatial_filter_input_sampled": false,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 44448,
+                "post_eef_filter_points": 43853,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0461559": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_f0461559/depth/1629444370650.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 888,
+                "color_timestamp_error_ms": 8,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 35435,
+                "neighbor_consistent_depth_pixels": 35125,
+                "artifact_free_depth_pixels": 34785,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 34785
+              },
+              "105422061350": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_105422061350/depth/1629444370601.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 754,
+                "color_timestamp_error_ms": 41,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52469,
+                "neighbor_consistent_depth_pixels": 52125,
+                "artifact_free_depth_pixels": 51655,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51655
+              },
+              "104122063678": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_104122063678/depth/1629444370612.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 752,
+                "color_timestamp_error_ms": 30,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52358,
+                "neighbor_consistent_depth_pixels": 51993,
+                "artifact_free_depth_pixels": 51406,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51406
+              },
+              "104122061850": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_104122061850/depth/1629444370667.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 741,
+                "color_timestamp_error_ms": 25,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52031,
+                "neighbor_consistent_depth_pixels": 51720,
+                "artifact_free_depth_pixels": 51236,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51236
+              },
+              "037522062165": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_037522062165/depth/1629444370666.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 563,
+                "color_timestamp_error_ms": 24,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 48826,
+                "neighbor_consistent_depth_pixels": 48197,
+                "artifact_free_depth_pixels": 47114,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 47114
+              },
+              "104422070044": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0001_user_0002_scene_0001_cfg_0002/cam_104422070044/depth/1629444370722.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 417,
+                "color_timestamp_error_ms": 80,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 53324,
+                "neighbor_consistent_depth_pixels": 52550,
+                "artifact_free_depth_pixels": 51910,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51910
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 29138,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019999507814645767,
+            "nearest_query_points_by_camera": [
+              50000,
+              50000,
+              29862,
+              24852,
+              23556,
+              22705
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "cfg": 2,
+      "scene": "task_0069_user_0014_scene_0009_cfg_0002",
+      "output": "/opt/data/private/liusong/RH20T/rh20t/liusong_process/cfg2/pixel_filter_review_20260906_v1/task_0069_user_0014_scene_0009_cfg_0002",
+      "frame_count": 111,
+      "timings": {
+        "setup_seconds": 0.2473771048244089,
+        "decode_seconds": 1.9631409535650164,
+        "filter_seconds": 3.07498874864541,
+        "gripper_seconds": 0.27886393410153687,
+        "ply_write_seconds": 0.6434922064654529,
+        "full_episode_preprocessing_seconds": 6.2143845630344,
+        "local_fsync_seconds": 0.33028095308691263,
+        "full_episode_including_fsync_seconds": 6.544665516121313,
+        "three_frame_controls_and_review_export_seconds": 3.3851497750729322
+      },
+      "examples": [
+        {
+          "frame": 0,
+          "source_color_index": 30,
+          "directory": "frame_000000_source_000030",
+          "single_scene_points": 44854,
+          "single_unique_xyz": 44854,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 21709,
+          "baseline_diagnostics": {
+            "frame": 0,
+            "source_color_index": 30,
+            "target_timestamp_ms": 1633348388195,
+            "primary_camera": "036422060215",
+            "static_cameras_used": {
+              "036422060215": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_036422060215/depth/1633348388195.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 30,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 48794,
+                "neighbor_consistent_depth_pixels": 48302,
+                "artifact_free_depth_pixels": 47425,
+                "pre_spatial_filter_points": 47425,
+                "spatial_filter_input_points": 47425,
+                "spatial_filter_input_sampled": false,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 47425,
+                "post_eef_filter_points": 44854,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0461559": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_f0461559/depth/1633348388209.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 27,
+                "color_timestamp_error_ms": 14,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 38261,
+                "neighbor_consistent_depth_pixels": 37363,
+                "artifact_free_depth_pixels": 36734,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 36734
+              },
+              "105422061350": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_105422061350/depth/1633348388225.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 29,
+                "color_timestamp_error_ms": 30,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52109,
+                "neighbor_consistent_depth_pixels": 52022,
+                "artifact_free_depth_pixels": 51710,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51710
+              },
+              "104122061850": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_104122061850/depth/1633348388219.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 38,
+                "color_timestamp_error_ms": 24,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52333,
+                "neighbor_consistent_depth_pixels": 52025,
+                "artifact_free_depth_pixels": 51648,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51648
+              },
+              "037522062165": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_037522062165/depth/1633348388222.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 17,
+                "color_timestamp_error_ms": 27,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52013,
+                "neighbor_consistent_depth_pixels": 51490,
+                "artifact_free_depth_pixels": 50872,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 50872
+              },
+              "104422070044": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_104422070044/depth/1633348388197.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 8,
+                "color_timestamp_error_ms": 2,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 51896,
+                "neighbor_consistent_depth_pixels": 51003,
+                "artifact_free_depth_pixels": 50499,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 50499
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 35779,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019991228356957436,
+            "nearest_query_points_by_camera": [
+              50000,
+              50000,
+              25963,
+              20742,
+              19003
+            ]
+          }
+        },
+        {
+          "frame": 55,
+          "source_color_index": 180,
+          "directory": "frame_000055_source_000180",
+          "single_scene_points": 47268,
+          "single_unique_xyz": 47268,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 20948,
+          "baseline_diagnostics": {
+            "frame": 55,
+            "source_color_index": 180,
+            "target_timestamp_ms": 1633348399793,
+            "primary_camera": "036422060215",
+            "static_cameras_used": {
+              "036422060215": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_036422060215/depth/1633348399793.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 180,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 49336,
+                "neighbor_consistent_depth_pixels": 48938,
+                "artifact_free_depth_pixels": 48110,
+                "pre_spatial_filter_points": 48110,
+                "spatial_filter_input_points": 48110,
+                "spatial_filter_input_sampled": false,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 48110,
+                "post_eef_filter_points": 47268,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0461559": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_f0461559/depth/1633348399786.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 238,
+                "color_timestamp_error_ms": 7,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 38067,
+                "neighbor_consistent_depth_pixels": 36638,
+                "artifact_free_depth_pixels": 35781,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 35781
+              },
+              "105422061350": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_105422061350/depth/1633348399799.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 182,
+                "color_timestamp_error_ms": 6,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 46582,
+                "neighbor_consistent_depth_pixels": 46385,
+                "artifact_free_depth_pixels": 45419,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 45419
+              },
+              "104122061850": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_104122061850/depth/1633348399800.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 192,
+                "color_timestamp_error_ms": 7,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 52330,
+                "neighbor_consistent_depth_pixels": 52012,
+                "artifact_free_depth_pixels": 51572,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51572
+              },
+              "037522062165": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_037522062165/depth/1633348399788.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 170,
+                "color_timestamp_error_ms": 5,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 50660,
+                "neighbor_consistent_depth_pixels": 50223,
+                "artifact_free_depth_pixels": 49594,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 49594
+              },
+              "104422070044": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_104422070044/depth/1633348399754.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 110,
+                "color_timestamp_error_ms": 39,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 50664,
+                "neighbor_consistent_depth_pixels": 49513,
+                "artifact_free_depth_pixels": 48674,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 48674
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 33859,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019999001175165176,
+            "nearest_query_points_by_camera": [
+              50000,
+              50000,
+              32547,
+              26095,
+              22682
+            ]
+          }
+        },
+        {
+          "frame": 110,
+          "source_color_index": 327,
+          "directory": "frame_000110_source_000327",
+          "single_scene_points": 47976,
+          "single_unique_xyz": 47976,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 20999,
+          "baseline_diagnostics": {
+            "frame": 110,
+            "source_color_index": 327,
+            "target_timestamp_ms": 1633348410475,
+            "primary_camera": "036422060215",
+            "static_cameras_used": {
+              "036422060215": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_036422060215/depth/1633348410475.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 327,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 49620,
+                "neighbor_consistent_depth_pixels": 49260,
+                "artifact_free_depth_pixels": 48551,
+                "pre_spatial_filter_points": 48551,
+                "spatial_filter_input_points": 48551,
+                "spatial_filter_input_sampled": false,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 48551,
+                "post_eef_filter_points": 47976,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0461559": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_f0461559/depth/1633348410479.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 428,
+                "color_timestamp_error_ms": 4,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 37342,
+                "neighbor_consistent_depth_pixels": 36189,
+                "artifact_free_depth_pixels": 35343,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 35343
+              },
+              "105422061350": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_105422061350/depth/1633348410481.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 327,
+                "color_timestamp_error_ms": 6,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 51890,
+                "neighbor_consistent_depth_pixels": 51803,
+                "artifact_free_depth_pixels": 51435,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 51435
+              },
+              "104122061850": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_104122061850/depth/1633348410475.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 326,
+                "color_timestamp_error_ms": 0,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 51786,
+                "neighbor_consistent_depth_pixels": 51454,
+                "artifact_free_depth_pixels": 50965,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 50965
+              },
+              "037522062165": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_037522062165/depth/1633348410508.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 312,
+                "color_timestamp_error_ms": 33,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 50582,
+                "neighbor_consistent_depth_pixels": 50041,
+                "artifact_free_depth_pixels": 49277,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 49277
+              },
+              "104422070044": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg2/task_0069_user_0014_scene_0009_cfg_0002/cam_104422070044/depth/1633348410492.png",
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 209,
+                "color_timestamp_error_ms": 17,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  320,
+                  180
+                ],
+                "range_valid_depth_pixels": 50363,
+                "neighbor_consistent_depth_pixels": 49597,
+                "artifact_free_depth_pixels": 48855,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 48855
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 33766,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019977323710918427,
+            "nearest_query_points_by_camera": [
+              50000,
+              50000,
+              27854,
+              24414,
+              21315
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "cfg": 3,
+      "scene": "task_0021_user_0010_scene_0001_cfg_0003",
+      "output": "/opt/data/private/liusong/RH20T/rh20t/liusong_process/cfg3/pixel_filter_review_20260906_v1/task_0021_user_0010_scene_0001_cfg_0003",
+      "frame_count": 120,
+      "timings": {
+        "setup_seconds": 0.4169227338861674,
+        "decode_seconds": 3.9988906087819487,
+        "filter_seconds": 21.924315692391247,
+        "gripper_seconds": 0.3238482531160116,
+        "ply_write_seconds": 0.8248824225738645,
+        "full_episode_preprocessing_seconds": 27.496257826918736,
+        "local_fsync_seconds": 0.33557445905171335,
+        "full_episode_including_fsync_seconds": 27.83183228597045,
+        "three_frame_controls_and_review_export_seconds": 22.479162354953587
+      },
+      "examples": [
+        {
+          "frame": 0,
+          "source_color_index": 48,
+          "directory": "frame_000000_source_000048",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 46487,
+          "baseline_diagnostics": {
+            "frame": 0,
+            "source_color_index": 48,
+            "target_timestamp_ms": 1630738923374,
+            "primary_camera": "104122062295",
+            "static_cameras_used": {
+              "104122062295": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104122062295/depth.mp4",
+                "depth_frame_index": 48,
+                "color_frame_index": 48,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 164890,
+                "neighbor_consistent_depth_pixels": 157147,
+                "artifact_free_depth_pixels": 152317,
+                "pre_spatial_filter_points": 152317,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 59688,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0172289": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_f0172289/depth.mp4",
+                "depth_frame_index": 51,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 51,
+                "color_timestamp_error_ms": 22,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 104017,
+                "neighbor_consistent_depth_pixels": 82511,
+                "artifact_free_depth_pixels": 66980,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 66980
+              },
+              "038522062288": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_038522062288/depth.mp4",
+                "depth_frame_index": 50,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 50,
+                "color_timestamp_error_ms": 40,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 204516,
+                "neighbor_consistent_depth_pixels": 196221,
+                "artifact_free_depth_pixels": 191612,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 191612
+              },
+              "104422070011": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104422070011/depth.mp4",
+                "depth_frame_index": 45,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 45,
+                "color_timestamp_error_ms": 8,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213081,
+                "neighbor_consistent_depth_pixels": 198404,
+                "artifact_free_depth_pixels": 191856,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 191856
+              },
+              "104122062823": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104122062823/depth.mp4",
+                "depth_frame_index": 51,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 51,
+                "color_timestamp_error_ms": 45,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 191965,
+                "neighbor_consistent_depth_pixels": 179504,
+                "artifact_free_depth_pixels": 173688,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 173688
+              },
+              "036422060909": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_036422060909/depth.mp4",
+                "depth_frame_index": 45,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 45,
+                "color_timestamp_error_ms": 57,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 188864,
+                "neighbor_consistent_depth_pixels": 174348,
+                "artifact_free_depth_pixels": 166303,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 166303
+              }
+            },
+            "static_cameras_skipped": {
+              "104122063550": "no synchronized depth frame"
+            },
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 46487,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019999699667096138,
+            "nearest_query_points_by_camera": [
+              50000,
+              45679,
+              15276,
+              5482,
+              3626
+            ]
+          }
+        },
+        {
+          "frame": 60,
+          "source_color_index": 198,
+          "directory": "frame_000060_source_000198",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 44738,
+          "baseline_diagnostics": {
+            "frame": 60,
+            "source_color_index": 198,
+            "target_timestamp_ms": 1630738943008,
+            "primary_camera": "104122062295",
+            "static_cameras_used": {
+              "104122062295": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104122062295/depth.mp4",
+                "depth_frame_index": 198,
+                "color_frame_index": 198,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 153307,
+                "neighbor_consistent_depth_pixels": 143222,
+                "artifact_free_depth_pixels": 136501,
+                "pre_spatial_filter_points": 136501,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 60000,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0172289": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_f0172289/depth.mp4",
+                "depth_frame_index": 253,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 253,
+                "color_timestamp_error_ms": 45,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 104160,
+                "neighbor_consistent_depth_pixels": 82995,
+                "artifact_free_depth_pixels": 66705,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 66705
+              },
+              "038522062288": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_038522062288/depth.mp4",
+                "depth_frame_index": 195,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 195,
+                "color_timestamp_error_ms": 46,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 206827,
+                "neighbor_consistent_depth_pixels": 198239,
+                "artifact_free_depth_pixels": 193398,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 193398
+              },
+              "104422070011": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104422070011/depth.mp4",
+                "depth_frame_index": 193,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 193,
+                "color_timestamp_error_ms": 56,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 217082,
+                "neighbor_consistent_depth_pixels": 202557,
+                "artifact_free_depth_pixels": 194806,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 194806
+              },
+              "104122062823": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104122062823/depth.mp4",
+                "depth_frame_index": 196,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 196,
+                "color_timestamp_error_ms": 74,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 189665,
+                "neighbor_consistent_depth_pixels": 177718,
+                "artifact_free_depth_pixels": 170617,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 170617
+              },
+              "036422060909": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_036422060909/depth.mp4",
+                "depth_frame_index": 190,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 190,
+                "color_timestamp_error_ms": 34,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 174518,
+                "neighbor_consistent_depth_pixels": 160678,
+                "artifact_free_depth_pixels": 150952,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 150952
+              },
+              "104122063550": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104122063550/depth.mp4",
+                "depth_frame_index": 89,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 89,
+                "color_timestamp_error_ms": 7,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 197919,
+                "neighbor_consistent_depth_pixels": 185362,
+                "artifact_free_depth_pixels": 179823,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 179823
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 44738,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.01999909244477749,
+            "nearest_query_points_by_camera": [
+              50000,
+              44088,
+              11422,
+              8873,
+              5714,
+              5305
+            ]
+          }
+        },
+        {
+          "frame": 119,
+          "source_color_index": 345,
+          "directory": "frame_000119_source_000345",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 44436,
+          "baseline_diagnostics": {
+            "frame": 119,
+            "source_color_index": 345,
+            "target_timestamp_ms": 1630738961689,
+            "primary_camera": "104122062295",
+            "static_cameras_used": {
+              "104122062295": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104122062295/depth.mp4",
+                "depth_frame_index": 345,
+                "color_frame_index": 345,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 163697,
+                "neighbor_consistent_depth_pixels": 153337,
+                "artifact_free_depth_pixels": 147079,
+                "pre_spatial_filter_points": 147079,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 59812,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0172289": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_f0172289/depth.mp4",
+                "depth_frame_index": 442,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 442,
+                "color_timestamp_error_ms": 24,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 106088,
+                "neighbor_consistent_depth_pixels": 84380,
+                "artifact_free_depth_pixels": 68424,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 68424
+              },
+              "038522062288": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_038522062288/depth.mp4",
+                "depth_frame_index": 347,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 347,
+                "color_timestamp_error_ms": 28,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 206600,
+                "neighbor_consistent_depth_pixels": 198578,
+                "artifact_free_depth_pixels": 195075,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 195075
+              },
+              "104422070011": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104422070011/depth.mp4",
+                "depth_frame_index": 326,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 326,
+                "color_timestamp_error_ms": 63,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 217025,
+                "neighbor_consistent_depth_pixels": 203468,
+                "artifact_free_depth_pixels": 197379,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 197379
+              },
+              "104122062823": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104122062823/depth.mp4",
+                "depth_frame_index": 325,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 325,
+                "color_timestamp_error_ms": 31,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 187075,
+                "neighbor_consistent_depth_pixels": 173474,
+                "artifact_free_depth_pixels": 166481,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 166481
+              },
+              "036422060909": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_036422060909/depth.mp4",
+                "depth_frame_index": 321,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 321,
+                "color_timestamp_error_ms": 13,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 173034,
+                "neighbor_consistent_depth_pixels": 157565,
+                "artifact_free_depth_pixels": 147454,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 147454
+              },
+              "104122063550": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg3/task_0021_user_0010_scene_0001_cfg_0003/cam_104122063550/depth.mp4",
+                "depth_frame_index": 154,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 154,
+                "color_timestamp_error_ms": 10,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 198491,
+                "neighbor_consistent_depth_pixels": 185738,
+                "artifact_free_depth_pixels": 178913,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 178913
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 44436,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019997432827949524,
+            "nearest_query_points_by_camera": [
+              50000,
+              44452,
+              13261,
+              9369,
+              7103,
+              5607
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "cfg": 4,
+      "scene": "task_0013_user_0007_scene_0001_cfg_0004",
+      "output": "/opt/data/private/liusong/RH20T/rh20t/liusong_process/cfg4/pixel_filter_review_20260906_v1/task_0013_user_0007_scene_0001_cfg_0004",
+      "frame_count": 100,
+      "timings": {
+        "setup_seconds": 0.16637314902618527,
+        "decode_seconds": 4.46385035593994,
+        "filter_seconds": 16.066453725565225,
+        "gripper_seconds": 0.2688205561134964,
+        "ply_write_seconds": 0.6098077916540205,
+        "full_episode_preprocessing_seconds": 21.581660059979185,
+        "local_fsync_seconds": 0.30807755910791457,
+        "full_episode_including_fsync_seconds": 21.8897376190871,
+        "three_frame_controls_and_review_export_seconds": 19.474623215850443
+      },
+      "examples": [
+        {
+          "frame": 0,
+          "source_color_index": 57,
+          "directory": "frame_000000_source_000057",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 44995,
+          "baseline_diagnostics": {
+            "frame": 0,
+            "source_color_index": 57,
+            "target_timestamp_ms": 1634730085525,
+            "primary_camera": "104122062295",
+            "static_cameras_used": {
+              "104122062295": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104122062295/depth.mp4",
+                "depth_frame_index": 57,
+                "color_frame_index": 57,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 198928,
+                "neighbor_consistent_depth_pixels": 189172,
+                "artifact_free_depth_pixels": 184696,
+                "pre_spatial_filter_points": 184696,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 56387,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0172289": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_f0172289/depth.mp4",
+                "depth_frame_index": 63,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 63,
+                "color_timestamp_error_ms": 11,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 148513,
+                "neighbor_consistent_depth_pixels": 133435,
+                "artifact_free_depth_pixels": 122854,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 122854
+              },
+              "104422070011": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104422070011/depth.mp4",
+                "depth_frame_index": 50,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 50,
+                "color_timestamp_error_ms": 57,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 222119,
+                "neighbor_consistent_depth_pixels": 211740,
+                "artifact_free_depth_pixels": 206854,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 206854
+              },
+              "038522062288": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_038522062288/depth.mp4",
+                "depth_frame_index": 60,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 60,
+                "color_timestamp_error_ms": 46,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 209930,
+                "neighbor_consistent_depth_pixels": 203108,
+                "artifact_free_depth_pixels": 199374,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 199374
+              },
+              "104122062823": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104122062823/depth.mp4",
+                "depth_frame_index": 67,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 67,
+                "color_timestamp_error_ms": 37,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 201736,
+                "neighbor_consistent_depth_pixels": 193572,
+                "artifact_free_depth_pixels": 189377,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 189377
+              },
+              "036422060909": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_036422060909/depth.mp4",
+                "depth_frame_index": 58,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 58,
+                "color_timestamp_error_ms": 9,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 191647,
+                "neighbor_consistent_depth_pixels": 178712,
+                "artifact_free_depth_pixels": 171887,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 171887
+              },
+              "104122063550": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104122063550/depth.mp4",
+                "depth_frame_index": 29,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 29,
+                "color_timestamp_error_ms": 2,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 178806,
+                "neighbor_consistent_depth_pixels": 165813,
+                "artifact_free_depth_pixels": 157961,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 157961
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 44995,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019999824464321136,
+            "nearest_query_points_by_camera": [
+              50000,
+              27361,
+              20825,
+              6034,
+              6030,
+              5007
+            ]
+          }
+        },
+        {
+          "frame": 50,
+          "source_color_index": 182,
+          "directory": "frame_000050_source_000182",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 43519,
+          "baseline_diagnostics": {
+            "frame": 50,
+            "source_color_index": 182,
+            "target_timestamp_ms": 1634730099506,
+            "primary_camera": "104122062295",
+            "static_cameras_used": {
+              "104122062295": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104122062295/depth.mp4",
+                "depth_frame_index": 182,
+                "color_frame_index": 182,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 196734,
+                "neighbor_consistent_depth_pixels": 186995,
+                "artifact_free_depth_pixels": 182141,
+                "pre_spatial_filter_points": 182141,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 56430,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0172289": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_f0172289/depth.mp4",
+                "depth_frame_index": 256,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 256,
+                "color_timestamp_error_ms": 25,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 150544,
+                "neighbor_consistent_depth_pixels": 135598,
+                "artifact_free_depth_pixels": 125258,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 125258
+              },
+              "104422070011": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104422070011/depth.mp4",
+                "depth_frame_index": 177,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 177,
+                "color_timestamp_error_ms": 38,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 221161,
+                "neighbor_consistent_depth_pixels": 211053,
+                "artifact_free_depth_pixels": 205549,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 205549
+              },
+              "038522062288": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_038522062288/depth.mp4",
+                "depth_frame_index": 188,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 188,
+                "color_timestamp_error_ms": 16,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 203573,
+                "neighbor_consistent_depth_pixels": 196931,
+                "artifact_free_depth_pixels": 192773,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 192773
+              },
+              "104122062823": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104122062823/depth.mp4",
+                "depth_frame_index": 179,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 179,
+                "color_timestamp_error_ms": 17,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 203036,
+                "neighbor_consistent_depth_pixels": 194753,
+                "artifact_free_depth_pixels": 190284,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 190284
+              },
+              "036422060909": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_036422060909/depth.mp4",
+                "depth_frame_index": 175,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 175,
+                "color_timestamp_error_ms": 30,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 178049,
+                "neighbor_consistent_depth_pixels": 165124,
+                "artifact_free_depth_pixels": 156802,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 156802
+              },
+              "104122063550": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104122063550/depth.mp4",
+                "depth_frame_index": 87,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 87,
+                "color_timestamp_error_ms": 14,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 182019,
+                "neighbor_consistent_depth_pixels": 168036,
+                "artifact_free_depth_pixels": 159312,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 159312
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 43519,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.01999693363904953,
+            "nearest_query_points_by_camera": [
+              50000,
+              30038,
+              21948,
+              7611,
+              7501,
+              6494
+            ]
+          }
+        },
+        {
+          "frame": 99,
+          "source_color_index": 304,
+          "directory": "frame_000099_source_000304",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 46158,
+          "baseline_diagnostics": {
+            "frame": 99,
+            "source_color_index": 304,
+            "target_timestamp_ms": 1634730114852,
+            "primary_camera": "104122062295",
+            "static_cameras_used": {
+              "104122062295": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104122062295/depth.mp4",
+                "depth_frame_index": 304,
+                "color_frame_index": 304,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 203198,
+                "neighbor_consistent_depth_pixels": 194196,
+                "artifact_free_depth_pixels": 190047,
+                "pre_spatial_filter_points": 190047,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 56590,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0172289": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_f0172289/depth.mp4",
+                "depth_frame_index": 436,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 436,
+                "color_timestamp_error_ms": 34,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 154888,
+                "neighbor_consistent_depth_pixels": 141106,
+                "artifact_free_depth_pixels": 131802,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 131802
+              },
+              "104422070011": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104422070011/depth.mp4",
+                "depth_frame_index": 308,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 308,
+                "color_timestamp_error_ms": 25,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 226010,
+                "neighbor_consistent_depth_pixels": 215785,
+                "artifact_free_depth_pixels": 211021,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 211021
+              },
+              "038522062288": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_038522062288/depth.mp4",
+                "depth_frame_index": 299,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 299,
+                "color_timestamp_error_ms": 54,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213730,
+                "neighbor_consistent_depth_pixels": 207209,
+                "artifact_free_depth_pixels": 203722,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 203722
+              },
+              "104122062823": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104122062823/depth.mp4",
+                "depth_frame_index": 299,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 299,
+                "color_timestamp_error_ms": 6,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 201009,
+                "neighbor_consistent_depth_pixels": 193109,
+                "artifact_free_depth_pixels": 189456,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 189456
+              },
+              "036422060909": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_036422060909/depth.mp4",
+                "depth_frame_index": 294,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 294,
+                "color_timestamp_error_ms": 65,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 209363,
+                "neighbor_consistent_depth_pixels": 197918,
+                "artifact_free_depth_pixels": 191911,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 191911
+              },
+              "104122063550": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg4/task_0013_user_0007_scene_0001_cfg_0004/cam_104122063550/depth.mp4",
+                "depth_frame_index": 144,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 144,
+                "color_timestamp_error_ms": 34,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 197600,
+                "neighbor_consistent_depth_pixels": 186286,
+                "artifact_free_depth_pixels": 180382,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 180382
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 46158,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019999168813228607,
+            "nearest_query_points_by_camera": [
+              50000,
+              26322,
+              16112,
+              4890,
+              4884,
+              3844
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "cfg": 5,
+      "scene": "task_0001_user_0007_scene_0001_cfg_0005",
+      "output": "/opt/data/private/liusong/RH20T/rh20t/liusong_process/cfg5/pixel_filter_review_20260906_v1/task_0001_user_0007_scene_0001_cfg_0005",
+      "frame_count": 77,
+      "timings": {
+        "setup_seconds": 0.5107434489764273,
+        "decode_seconds": 3.0707295928150415,
+        "filter_seconds": 13.940189991844818,
+        "gripper_seconds": 0.22190068080089986,
+        "ply_write_seconds": 0.3507044455036521,
+        "full_episode_preprocessing_seconds": 18.09995348798111,
+        "local_fsync_seconds": 0.2610450650099665,
+        "full_episode_including_fsync_seconds": 18.360998552991077,
+        "three_frame_controls_and_review_export_seconds": 8.67741629597731
+      },
+      "examples": [
+        {
+          "frame": 0,
+          "source_color_index": 0,
+          "directory": "frame_000000_source_000000",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 43320,
+          "baseline_diagnostics": {
+            "frame": 0,
+            "source_color_index": 0,
+            "target_timestamp_ms": 1640002327544,
+            "primary_camera": "104122061850",
+            "static_cameras_used": {
+              "104122061850": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_104122061850/depth.mp4",
+                "depth_frame_index": 0,
+                "color_frame_index": 0,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214632,
+                "neighbor_consistent_depth_pixels": 210324,
+                "artifact_free_depth_pixels": 207364,
+                "pre_spatial_filter_points": 207364,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 56782,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "105422061350": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_105422061350/depth.mp4",
+                "depth_frame_index": 55,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 55,
+                "color_timestamp_error_ms": 22,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 207690,
+                "neighbor_consistent_depth_pixels": 203074,
+                "artifact_free_depth_pixels": 200373,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 200373
+              },
+              "104122063678": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_104122063678/depth.mp4",
+                "depth_frame_index": 50,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 50,
+                "color_timestamp_error_ms": 7,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214129,
+                "neighbor_consistent_depth_pixels": 202078,
+                "artifact_free_depth_pixels": 196235,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 196235
+              },
+              "036422060215": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_036422060215/depth.mp4",
+                "depth_frame_index": 9,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 9,
+                "color_timestamp_error_ms": 25,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 204025,
+                "neighbor_consistent_depth_pixels": 193817,
+                "artifact_free_depth_pixels": 188292,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 188292
+              }
+            },
+            "static_cameras_skipped": {
+              "037522062165": "no synchronized depth frame",
+              "104422070044": "no synchronized depth frame"
+            },
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 43320,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019998203963041306,
+            "nearest_query_points_by_camera": [
+              50000,
+              22085,
+              8967
+            ]
+          }
+        },
+        {
+          "frame": 38,
+          "source_color_index": 107,
+          "directory": "frame_000038_source_000107",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 42732,
+          "baseline_diagnostics": {
+            "frame": 38,
+            "source_color_index": 107,
+            "target_timestamp_ms": 1640002335265,
+            "primary_camera": "104122061850",
+            "static_cameras_used": {
+              "104122061850": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_104122061850/depth.mp4",
+                "depth_frame_index": 107,
+                "color_frame_index": 107,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213779,
+                "neighbor_consistent_depth_pixels": 208029,
+                "artifact_free_depth_pixels": 205479,
+                "pre_spatial_filter_points": 205479,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 58784,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "105422061350": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_105422061350/depth.mp4",
+                "depth_frame_index": 150,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 150,
+                "color_timestamp_error_ms": 5,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 205019,
+                "neighbor_consistent_depth_pixels": 200094,
+                "artifact_free_depth_pixels": 196999,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 196999
+              },
+              "104122063678": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_104122063678/depth.mp4",
+                "depth_frame_index": 159,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 159,
+                "color_timestamp_error_ms": 19,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 212479,
+                "neighbor_consistent_depth_pixels": 199105,
+                "artifact_free_depth_pixels": 193045,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 193045
+              },
+              "036422060215": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_036422060215/depth.mp4",
+                "depth_frame_index": 112,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 112,
+                "color_timestamp_error_ms": 22,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 202261,
+                "neighbor_consistent_depth_pixels": 191758,
+                "artifact_free_depth_pixels": 185866,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 185866
+              },
+              "037522062165": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_037522062165/depth.mp4",
+                "depth_frame_index": 102,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 102,
+                "color_timestamp_error_ms": 1,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 210981,
+                "neighbor_consistent_depth_pixels": 199424,
+                "artifact_free_depth_pixels": 193420,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 193420
+              }
+            },
+            "static_cameras_skipped": {
+              "104422070044": "no synchronized depth frame"
+            },
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 42732,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019991381093859673,
+            "nearest_query_points_by_camera": [
+              50000,
+              26237,
+              12409,
+              8235
+            ]
+          }
+        },
+        {
+          "frame": 76,
+          "source_color_index": 222,
+          "directory": "frame_000076_source_000222",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 43396,
+          "baseline_diagnostics": {
+            "frame": 76,
+            "source_color_index": 222,
+            "target_timestamp_ms": 1640002343383,
+            "primary_camera": "104122061850",
+            "static_cameras_used": {
+              "104122061850": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_104122061850/depth.mp4",
+                "depth_frame_index": 222,
+                "color_frame_index": 222,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213991,
+                "neighbor_consistent_depth_pixels": 208369,
+                "artifact_free_depth_pixels": 205702,
+                "pre_spatial_filter_points": 205702,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 59950,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "105422061350": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_105422061350/depth.mp4",
+                "depth_frame_index": 269,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 269,
+                "color_timestamp_error_ms": 20,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 210327,
+                "neighbor_consistent_depth_pixels": 204867,
+                "artifact_free_depth_pixels": 202406,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 202406
+              },
+              "104122063678": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_104122063678/depth.mp4",
+                "depth_frame_index": 262,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 262,
+                "color_timestamp_error_ms": 6,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213752,
+                "neighbor_consistent_depth_pixels": 201610,
+                "artifact_free_depth_pixels": 196231,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 196231
+              },
+              "036422060215": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_036422060215/depth.mp4",
+                "depth_frame_index": 230,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 230,
+                "color_timestamp_error_ms": 10,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 185921,
+                "neighbor_consistent_depth_pixels": 175523,
+                "artifact_free_depth_pixels": 169844,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 169844
+              },
+              "037522062165": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg5/task_0001_user_0007_scene_0001_cfg_0005/cam_037522062165/depth.mp4",
+                "depth_frame_index": 217,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 217,
+                "color_timestamp_error_ms": 34,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 211251,
+                "neighbor_consistent_depth_pixels": 199374,
+                "artifact_free_depth_pixels": 193037,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 193037
+              }
+            },
+            "static_cameras_skipped": {
+              "104422070044": "no synchronized depth frame"
+            },
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 43396,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019996143877506256,
+            "nearest_query_points_by_camera": [
+              50000,
+              22802,
+              10695,
+              7716
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "cfg": 6,
+      "scene": "task_0001_user_0014_scene_0001_cfg_0006",
+      "output": "/opt/data/private/liusong/RH20T/rh20t/liusong_process/cfg6/pixel_filter_review_20260906_v1/task_0001_user_0014_scene_0001_cfg_0006",
+      "frame_count": 94,
+      "timings": {
+        "setup_seconds": 0.8993887940887362,
+        "decode_seconds": 3.6623729134444147,
+        "filter_seconds": 9.346420951886103,
+        "gripper_seconds": 0.2653027856722474,
+        "ply_write_seconds": 0.34542513987980783,
+        "full_episode_preprocessing_seconds": 14.524884077953175,
+        "local_fsync_seconds": 0.31032763002440333,
+        "full_episode_including_fsync_seconds": 14.835211707977578,
+        "three_frame_controls_and_review_export_seconds": 16.80933634703979
+      },
+      "examples": [
+        {
+          "frame": 0,
+          "source_color_index": 49,
+          "directory": "frame_000000_source_000049",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 28104,
+          "baseline_diagnostics": {
+            "frame": 0,
+            "source_color_index": 49,
+            "target_timestamp_ms": 1641554309290,
+            "primary_camera": "104122060811",
+            "static_cameras_used": {
+              "104122060811": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122060811/depth.mp4",
+                "depth_frame_index": 49,
+                "color_frame_index": 49,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 210984,
+                "neighbor_consistent_depth_pixels": 191216,
+                "artifact_free_depth_pixels": 181766,
+                "pre_spatial_filter_points": 181766,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 55883,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0271510": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_f0271510/depth.mp4",
+                "depth_frame_index": 7,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 7,
+                "color_timestamp_error_ms": 21,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 113375,
+                "neighbor_consistent_depth_pixels": 95593,
+                "artifact_free_depth_pixels": 84203,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 84203
+              },
+              "037522061512": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_037522061512/depth.mp4",
+                "depth_frame_index": 57,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 57,
+                "color_timestamp_error_ms": 4,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214711,
+                "neighbor_consistent_depth_pixels": 209132,
+                "artifact_free_depth_pixels": 205891,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 205891
+              },
+              "104122064161": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122064161/depth.mp4",
+                "depth_frame_index": 39,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 39,
+                "color_timestamp_error_ms": 10,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214275,
+                "neighbor_consistent_depth_pixels": 208482,
+                "artifact_free_depth_pixels": 205323,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 205323
+              },
+              "104122061602": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122061602/depth.mp4",
+                "depth_frame_index": 35,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 35,
+                "color_timestamp_error_ms": 32,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 185990,
+                "neighbor_consistent_depth_pixels": 178570,
+                "artifact_free_depth_pixels": 174761,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 174761
+              },
+              "104122063633": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122063633/depth.mp4",
+                "depth_frame_index": 31,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 31,
+                "color_timestamp_error_ms": 23,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214344,
+                "neighbor_consistent_depth_pixels": 204978,
+                "artifact_free_depth_pixels": 200661,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 200661
+              },
+              "104122061330": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122061330/depth.mp4",
+                "depth_frame_index": 30,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 30,
+                "color_timestamp_error_ms": 24,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 212751,
+                "neighbor_consistent_depth_pixels": 206140,
+                "artifact_free_depth_pixels": 203152,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 203152
+              },
+              "104122061018": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122061018/depth.mp4",
+                "depth_frame_index": 26,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 26,
+                "color_timestamp_error_ms": 14,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214802,
+                "neighbor_consistent_depth_pixels": 212700,
+                "artifact_free_depth_pixels": 211771,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 211771
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 28104,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019999902695417404,
+            "nearest_query_points_by_camera": [
+              50000,
+              49803,
+              41856,
+              31790,
+              24224,
+              22733,
+              22396
+            ]
+          }
+        },
+        {
+          "frame": 47,
+          "source_color_index": 166,
+          "directory": "frame_000047_source_000166",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 26957,
+          "baseline_diagnostics": {
+            "frame": 47,
+            "source_color_index": 166,
+            "target_timestamp_ms": 1641554319733,
+            "primary_camera": "104122060811",
+            "static_cameras_used": {
+              "104122060811": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122060811/depth.mp4",
+                "depth_frame_index": 166,
+                "color_frame_index": 166,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 211475,
+                "neighbor_consistent_depth_pixels": 192656,
+                "artifact_free_depth_pixels": 182706,
+                "pre_spatial_filter_points": 182706,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 56319,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0271510": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_f0271510/depth.mp4",
+                "depth_frame_index": 178,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 178,
+                "color_timestamp_error_ms": 6,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 107303,
+                "neighbor_consistent_depth_pixels": 90722,
+                "artifact_free_depth_pixels": 79856,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 79856
+              },
+              "037522061512": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_037522061512/depth.mp4",
+                "depth_frame_index": 178,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 178,
+                "color_timestamp_error_ms": 42,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 215212,
+                "neighbor_consistent_depth_pixels": 210024,
+                "artifact_free_depth_pixels": 206736,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 206736
+              },
+              "104122064161": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122064161/depth.mp4",
+                "depth_frame_index": 162,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 162,
+                "color_timestamp_error_ms": 37,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213893,
+                "neighbor_consistent_depth_pixels": 208065,
+                "artifact_free_depth_pixels": 204642,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 204642
+              },
+              "104122061602": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122061602/depth.mp4",
+                "depth_frame_index": 160,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 160,
+                "color_timestamp_error_ms": 15,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 183934,
+                "neighbor_consistent_depth_pixels": 177937,
+                "artifact_free_depth_pixels": 173695,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 173695
+              },
+              "104122063633": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122063633/depth.mp4",
+                "depth_frame_index": 152,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 152,
+                "color_timestamp_error_ms": 25,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214580,
+                "neighbor_consistent_depth_pixels": 206293,
+                "artifact_free_depth_pixels": 202290,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 202290
+              },
+              "104122061330": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122061330/depth.mp4",
+                "depth_frame_index": 149,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 149,
+                "color_timestamp_error_ms": 34,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214191,
+                "neighbor_consistent_depth_pixels": 207014,
+                "artifact_free_depth_pixels": 203118,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 203118
+              },
+              "104122061018": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122061018/depth.mp4",
+                "depth_frame_index": 119,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 119,
+                "color_timestamp_error_ms": 12,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 215249,
+                "neighbor_consistent_depth_pixels": 213083,
+                "artifact_free_depth_pixels": 212091,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 212091
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 26957,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019998600706458092,
+            "nearest_query_points_by_camera": [
+              50000,
+              49832,
+              41691,
+              31873,
+              25363,
+              23767,
+              23493
+            ]
+          }
+        },
+        {
+          "frame": 93,
+          "source_color_index": 281,
+          "directory": "frame_000093_source_000281",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 27030,
+          "baseline_diagnostics": {
+            "frame": 93,
+            "source_color_index": 281,
+            "target_timestamp_ms": 1641554330296,
+            "primary_camera": "104122060811",
+            "static_cameras_used": {
+              "104122060811": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122060811/depth.mp4",
+                "depth_frame_index": 281,
+                "color_frame_index": 281,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 211558,
+                "neighbor_consistent_depth_pixels": 192634,
+                "artifact_free_depth_pixels": 182884,
+                "pre_spatial_filter_points": 182884,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 56124,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0271510": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_f0271510/depth.mp4",
+                "depth_frame_index": 346,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 346,
+                "color_timestamp_error_ms": 16,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 108978,
+                "neighbor_consistent_depth_pixels": 91867,
+                "artifact_free_depth_pixels": 81106,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 81106
+              },
+              "037522061512": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_037522061512/depth.mp4",
+                "depth_frame_index": 297,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 297,
+                "color_timestamp_error_ms": 28,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213739,
+                "neighbor_consistent_depth_pixels": 207078,
+                "artifact_free_depth_pixels": 203521,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 203521
+              },
+              "104122064161": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122064161/depth.mp4",
+                "depth_frame_index": 287,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 287,
+                "color_timestamp_error_ms": 32,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213575,
+                "neighbor_consistent_depth_pixels": 207175,
+                "artifact_free_depth_pixels": 203597,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 203597
+              },
+              "104122061602": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122061602/depth.mp4",
+                "depth_frame_index": 282,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 282,
+                "color_timestamp_error_ms": 44,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 182111,
+                "neighbor_consistent_depth_pixels": 174321,
+                "artifact_free_depth_pixels": 169740,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 169740
+              },
+              "104122063633": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122063633/depth.mp4",
+                "depth_frame_index": 274,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 274,
+                "color_timestamp_error_ms": 32,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213731,
+                "neighbor_consistent_depth_pixels": 205044,
+                "artifact_free_depth_pixels": 201473,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 201473
+              },
+              "104122061330": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122061330/depth.mp4",
+                "depth_frame_index": 271,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 271,
+                "color_timestamp_error_ms": 34,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 212752,
+                "neighbor_consistent_depth_pixels": 205613,
+                "artifact_free_depth_pixels": 202382,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 202382
+              },
+              "104122061018": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg6/task_0001_user_0014_scene_0001_cfg_0006/cam_104122061018/depth.mp4",
+                "depth_frame_index": 234,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 234,
+                "color_timestamp_error_ms": 28,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 215249,
+                "neighbor_consistent_depth_pixels": 213083,
+                "artifact_free_depth_pixels": 212091,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 212091
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 27030,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019998207688331604,
+            "nearest_query_points_by_camera": [
+              50000,
+              49748,
+              41783,
+              32282,
+              25727,
+              23723,
+              23459
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "cfg": 7,
+      "scene": "task_0001_user_0014_scene_0001_cfg_0007",
+      "output": "/opt/data/private/liusong/RH20T/rh20t/liusong_process/cfg7/pixel_filter_review_20260906_v1/task_0001_user_0014_scene_0001_cfg_0007",
+      "frame_count": 34,
+      "timings": {
+        "setup_seconds": 0.1863547288812697,
+        "decode_seconds": 1.0769622870720923,
+        "filter_seconds": 3.25457220710814,
+        "gripper_seconds": 0.07451262604445219,
+        "ply_write_seconds": 0.1259880953002721,
+        "full_episode_preprocessing_seconds": 4.720852166879922,
+        "local_fsync_seconds": 0.1460893270559609,
+        "full_episode_including_fsync_seconds": 4.866941493935883,
+        "three_frame_controls_and_review_export_seconds": 10.965370276011527
+      },
+      "examples": [
+        {
+          "frame": 0,
+          "source_color_index": 29,
+          "directory": "frame_000000_source_000029",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 48679,
+          "baseline_diagnostics": {
+            "frame": 0,
+            "source_color_index": 29,
+            "target_timestamp_ms": 1645701137497,
+            "primary_camera": "104122061018",
+            "static_cameras_used": {
+              "104122061018": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122061018/depth.mp4",
+                "depth_frame_index": 29,
+                "color_frame_index": 29,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214318,
+                "neighbor_consistent_depth_pixels": 211573,
+                "artifact_free_depth_pixels": 210171,
+                "pre_spatial_filter_points": 210171,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 59986,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0271510": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_f0271510/depth.mp4",
+                "depth_frame_index": 34,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 34,
+                "color_timestamp_error_ms": 24,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 111900,
+                "neighbor_consistent_depth_pixels": 86188,
+                "artifact_free_depth_pixels": 66220,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 66220
+              },
+              "104122061602": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122061602/depth.mp4",
+                "depth_frame_index": 39,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 39,
+                "color_timestamp_error_ms": 39,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 181345,
+                "neighbor_consistent_depth_pixels": 172416,
+                "artifact_free_depth_pixels": 167959,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 167959
+              },
+              "104122060811": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122060811/depth.mp4",
+                "depth_frame_index": 36,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 36,
+                "color_timestamp_error_ms": 21,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214652,
+                "neighbor_consistent_depth_pixels": 194632,
+                "artifact_free_depth_pixels": 184632,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 184632
+              },
+              "104122061330": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122061330/depth.mp4",
+                "depth_frame_index": 34,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 34,
+                "color_timestamp_error_ms": 9,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 209350,
+                "neighbor_consistent_depth_pixels": 203713,
+                "artifact_free_depth_pixels": 200426,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 200426
+              },
+              "037522061512": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_037522061512/depth.mp4",
+                "depth_frame_index": 31,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 31,
+                "color_timestamp_error_ms": 26,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213995,
+                "neighbor_consistent_depth_pixels": 206686,
+                "artifact_free_depth_pixels": 202097,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 202097
+              },
+              "104122063633": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122063633/depth.mp4",
+                "depth_frame_index": 32,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 32,
+                "color_timestamp_error_ms": 30,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214100,
+                "neighbor_consistent_depth_pixels": 205171,
+                "artifact_free_depth_pixels": 200637,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 200637
+              }
+            },
+            "static_cameras_skipped": {
+              "104122064161": "no synchronized depth frame"
+            },
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 48679,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019997887313365936,
+            "nearest_query_points_by_camera": [
+              50000,
+              46437,
+              15371,
+              10020,
+              6698,
+              5028
+            ]
+          }
+        },
+        {
+          "frame": 17,
+          "source_color_index": 71,
+          "directory": "frame_000017_source_000071",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 48039,
+          "baseline_diagnostics": {
+            "frame": 17,
+            "source_color_index": 71,
+            "target_timestamp_ms": 1645701141456,
+            "primary_camera": "104122061018",
+            "static_cameras_used": {
+              "104122061018": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122061018/depth.mp4",
+                "depth_frame_index": 71,
+                "color_frame_index": 71,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213843,
+                "neighbor_consistent_depth_pixels": 210892,
+                "artifact_free_depth_pixels": 209100,
+                "pre_spatial_filter_points": 209100,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 59813,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0271510": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_f0271510/depth.mp4",
+                "depth_frame_index": 98,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 98,
+                "color_timestamp_error_ms": 16,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 105308,
+                "neighbor_consistent_depth_pixels": 82014,
+                "artifact_free_depth_pixels": 62834,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 62834
+              },
+              "104122061602": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122061602/depth.mp4",
+                "depth_frame_index": 84,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 84,
+                "color_timestamp_error_ms": 25,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 181462,
+                "neighbor_consistent_depth_pixels": 174110,
+                "artifact_free_depth_pixels": 169277,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 169277
+              },
+              "104122060811": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122060811/depth.mp4",
+                "depth_frame_index": 79,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 79,
+                "color_timestamp_error_ms": 22,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214546,
+                "neighbor_consistent_depth_pixels": 193999,
+                "artifact_free_depth_pixels": 183656,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 183656
+              },
+              "104122061330": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122061330/depth.mp4",
+                "depth_frame_index": 77,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 77,
+                "color_timestamp_error_ms": 28,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214088,
+                "neighbor_consistent_depth_pixels": 207602,
+                "artifact_free_depth_pixels": 203831,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 203831
+              },
+              "037522061512": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_037522061512/depth.mp4",
+                "depth_frame_index": 74,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 74,
+                "color_timestamp_error_ms": 25,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214430,
+                "neighbor_consistent_depth_pixels": 207406,
+                "artifact_free_depth_pixels": 202649,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 202649
+              },
+              "104122063633": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122063633/depth.mp4",
+                "depth_frame_index": 75,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 75,
+                "color_timestamp_error_ms": 15,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214511,
+                "neighbor_consistent_depth_pixels": 204397,
+                "artifact_free_depth_pixels": 199366,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 199366
+              },
+              "104122064161": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122064161/depth.mp4",
+                "depth_frame_index": 72,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 72,
+                "color_timestamp_error_ms": 11,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 211498,
+                "neighbor_consistent_depth_pixels": 205037,
+                "artifact_free_depth_pixels": 201178,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 201178
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 48039,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.019999321550130844,
+            "nearest_query_points_by_camera": [
+              50000,
+              46685,
+              15144,
+              10725,
+              6926,
+              4775,
+              2160
+            ]
+          }
+        },
+        {
+          "frame": 33,
+          "source_color_index": 111,
+          "directory": "frame_000033_source_000111",
+          "single_scene_points": 49500,
+          "single_unique_xyz": 49500,
+          "multiview_scene_entries": 49500,
+          "multiview_unique_xyz": 48651,
+          "baseline_diagnostics": {
+            "frame": 33,
+            "source_color_index": 111,
+            "target_timestamp_ms": 1645701145201,
+            "primary_camera": "104122061018",
+            "static_cameras_used": {
+              "104122061018": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122061018/depth.mp4",
+                "depth_frame_index": 111,
+                "color_frame_index": 111,
+                "color_timestamp_error_ms": 0,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214129,
+                "neighbor_consistent_depth_pixels": 211091,
+                "artifact_free_depth_pixels": 209286,
+                "pre_spatial_filter_points": 209286,
+                "spatial_filter_input_points": 60000,
+                "spatial_filter_input_sampled": true,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "post_spatial_filter_points": 60000,
+                "post_eef_filter_points": 59626,
+                "eef_z_max_m": 0.4,
+                "consensus_candidate_points": 50000
+              },
+              "f0271510": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_f0271510/depth.mp4",
+                "depth_frame_index": 159,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 159,
+                "color_timestamp_error_ms": 6,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 105856,
+                "neighbor_consistent_depth_pixels": 83212,
+                "artifact_free_depth_pixels": 64167,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 64167
+              },
+              "104122061602": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122061602/depth.mp4",
+                "depth_frame_index": 125,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 125,
+                "color_timestamp_error_ms": 23,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 182123,
+                "neighbor_consistent_depth_pixels": 173234,
+                "artifact_free_depth_pixels": 167819,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 167819
+              },
+              "104122060811": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122060811/depth.mp4",
+                "depth_frame_index": 119,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 119,
+                "color_timestamp_error_ms": 27,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 215423,
+                "neighbor_consistent_depth_pixels": 194641,
+                "artifact_free_depth_pixels": 183978,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 183978
+              },
+              "104122061330": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122061330/depth.mp4",
+                "depth_frame_index": 116,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 116,
+                "color_timestamp_error_ms": 30,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 213113,
+                "neighbor_consistent_depth_pixels": 206818,
+                "artifact_free_depth_pixels": 203094,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 203094
+              },
+              "037522061512": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_037522061512/depth.mp4",
+                "depth_frame_index": 115,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 115,
+                "color_timestamp_error_ms": 36,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 212379,
+                "neighbor_consistent_depth_pixels": 204869,
+                "artifact_free_depth_pixels": 200348,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 200348
+              },
+              "104122063633": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122063633/depth.mp4",
+                "depth_frame_index": 114,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 114,
+                "color_timestamp_error_ms": 22,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 214245,
+                "neighbor_consistent_depth_pixels": 204693,
+                "artifact_free_depth_pixels": 199723,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 199723
+              },
+              "104122064161": {
+                "depth_source": "/opt/data/private/liusong/RH20T/extracted/RH20T_cfg7/task_0001_user_0014_scene_0001_cfg_0007/cam_104122064161/depth.mp4",
+                "depth_frame_index": 109,
+                "depth_timestamp_error_ms": 0,
+                "color_frame_index": 109,
+                "color_timestamp_error_ms": 16,
+                "auxiliary_color_decoded": false,
+                "depth_resolution": [
+                  640,
+                  360
+                ],
+                "range_valid_depth_pixels": 212100,
+                "neighbor_consistent_depth_pixels": 205180,
+                "artifact_free_depth_pixels": 201443,
+                "spatial_filter_backend": "gpu_multiview_depth_reprojection",
+                "consensus_candidate_points": 201443
+              }
+            },
+            "static_cameras_skipped": {},
+            "mode": "gpu_multiview_depth_reprojection",
+            "device": "cuda:3",
+            "neighborhood_radius_px": 1,
+            "primary_input_points": 50000,
+            "matched_primary_points": 48651,
+            "selected_scene_points": 49500,
+            "repeated_to_target": true,
+            "min_other_camera_support": 1,
+            "correspondence_distance_m": 0.02,
+            "selected_max_nearest_distance_m": 0.01999841071665287,
+            "nearest_query_points_by_camera": [
+              50000,
+              47277,
+              14319,
+              10255,
+              6374,
+              4535,
+              1570
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

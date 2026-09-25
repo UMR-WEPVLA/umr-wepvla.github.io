@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="UMR: a unified World–Ego action representation for scalable, zero-shot cross-embodiment manipulation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UMR | Universal Manipulation Representation</title>
+  <meta property="og:title" content="UMR: Universal Manipulation Representation">
+  <meta property="og:description" content="Coupled World Flow and Ego Trajectory for transferable manipulation learning.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="media/umr-preview.png">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="UMR point-cloud review preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="media/umr-preview.png">
+  <link rel="icon" href="media/preview-card-180p.jpg" type="image/jpeg">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link href="./static/css/index.css?v=20260925-21" rel="stylesheet">
+  <script src="./config/site-config.js"></script>
+  <script defer src="./static/js/index.js?v=20260925-9"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-fullhd">
+        <div class="columns is-centered">
+          <div class="column is-10 has-text-centered">
+            <h1 class="title is-1 publication-title" id="paper-title">UMR: Universal Manipulation Representation</h1>
+
+            <div class="is-size-5 publication-authors" id="paper-authors">
+              <span class="author-block"><a href="#">Author One</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="#">Author Two</a><sup>2</sup></span>
+            </div>
+            <div class="is-size-5 affiliation" id="paper-affiliation"><sup>1</sup>Your University, <sup>2</sup>Your Lab
+            </div>
+            <div class="affiliation-note" id="paper-affiliation-note">Author note</div>
+            <div class="publication-venue" id="paper-venue">Conference 2026</div>
+            <div class="publication-awards" id="paper-award">Optional award line</div>
+
+            <div class="button-container">
+              <a class="button" id="link-pdf" href="#" target="_blank" rel="noopener"><i
+                  class="fa-regular fa-file"></i>&nbsp;PDF</a>
+              <a class="button" id="link-arxiv" href="#" target="_blank" rel="noopener"><i
+                  class="fa-solid fa-book-open"></i>&nbsp;arXiv</a>
+              <!-- <a class="button" id="link-explainer" href="#" target="_blank" rel="noopener"><i
+                  class="fa-regular fa-film"></i>&nbsp;Explainer</a>
+              <a class="button" id="link-talk" href="#" target="_blank" rel="noopener"><i
+                  class="fa-regular fa-circle-play"></i>&nbsp;Long Talk</a>
+              <a class="button" id="link-tldr" href="#" target="_blank" rel="noopener"><i
+                  class="fa-brands fa-x-twitter"></i>&nbsp;tl;dr</a> -->
+              <a class="button" id="link-code" href="#" target="_blank" rel="noopener"><i
+                  class="fa-solid fa-code"></i>&nbsp;Code</a>
+              <div class="resource-menu">
+                <button aria-haspopup="menu" class="button resource-trigger" type="button">
+                  <i class="fa-solid fa-database"></i>&nbsp;Data &amp; Ckpts
+                  <i class="fa-solid fa-chevron-down resource-caret"></i>
+                </button>
+                <div aria-label="Data and checkpoints" class="resource-dropdown" role="menu">
+                  <a class="resource-link" id="link-data1" href="#" role="menuitem" target="_blank"><span>PLY Review
+                      Bundle</span><small>Interactive review export</small></a>
+                  <a class="resource-link" id="link-data2" href="#" role="menuitem" target="_blank"><span>Scene
+                      Manifest</span><small>Interactive samples</small></a>
+                  <a class="resource-link" id="link-checkpoints" href="#" role="menuitem"
+                    target="_blank"><span>Checkpoints</span><small>Model weights</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section teaser-section">
+    <div class="container is-max-widescreen">
+      <figure class="image teaser-image">
+        <video autoplay muted loop playsinline controls preload="metadata" poster="media/umr-preview.png"
+          aria-label="Project teaser">
+          <source src="media/UMR_Video_V3_BGM-web.mp4" type="video/mp4">
+        </video>
+      </figure>
+      <h2 class="subtitle has-text-centered teaser-caption" id="teaser-caption"
+        style="--teaser-caption-size:1.0rem;--teaser-caption-line-height:1.55;">
+        Replace this sentence with your one-line paper summary.
+      </h2>
+    </div>
+  </section>
+
+  <section class="section" id="abstract">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-left">
+        <div class="column">
+          <h2 class="title is-3 has-text-centered">Abstract</h2>
+          <div class="content has-text-justified">
+            <p id="abstract-copy">UMR decomposes manipulation into World Flow and Ego Trajectory, coupling transferable object motion with executable robot-local actions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="method">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Method Overview</h2>
+      <div class="method-grid" role="tablist" aria-label="Method components">
+        <article class="method-card is-active" id="method-tab-umr" role="tab" tabindex="0" aria-selected="true"
+          aria-controls="method-panel-umr" data-method-tab="umr">
+          <span class="method-index">01</span><span class="method-card-kicker">Representation</span>
+          <h3 class="title is-5">UMR</h3>
+          <p>A unified geometric action representation coupling embodiment-agnostic World Flow with locally executable Ego Trajectory through SE(3) conjugation.</p>
+          <div class="method-card-meta"><span>Task geometry</span><span>Local control</span></div>
+        </article>
+        <article class="method-card" id="method-tab-wepvla" role="tab" aria-selected="false"
+          aria-controls="method-panel-wepvla" data-method-tab="wepvla" tabindex="-1">
+          <span class="method-index">02</span><span class="method-card-kicker">Architecture</span>
+          <h3 class="title is-5">WEPVLA</h3>
+          <p>A compact 0.5B point-cloud VLA with motion-aware segmentation, a dual-stream Point Action Adapter, and a shared Point Action Expert.</p>
+          <div class="method-card-meta"><span>0.5B model</span><span>Joint denoising</span></div>
+        </article>
+        <article class="method-card" id="method-tab-des" role="tab" aria-selected="false"
+          aria-controls="method-panel-des" data-method-tab="des" tabindex="-1">
+          <span class="method-index">03</span><span class="method-card-kicker">Learning</span>
+          <h3 class="title is-5">Data-Efficient Strategy</h3>
+          <p>Stage-aware point-cloud editing diversifies object configurations while preserving demonstrated contact geometry.</p>
+          <div class="method-card-meta"><span>Stage-aware</span><span>Contact preserving</span></div>
+        </article>
+      </div>
+
+      <div class="method-detail-panels">
+        <section class="method-detail-panel is-active" id="method-panel-umr" role="tabpanel" aria-labelledby="method-tab-umr">
+          <div class="method-detail-copy">
+            <span class="method-detail-kicker">Universal Manipulation Representation</span>
+            <h3>Two coordinate views of the same underlying physical motion.</h3>
+            <p><strong>World Flow</strong> describes task-relevant object motion as a structured SE(3) trajectory in the world frame. <strong>Ego Trajectory</strong> expresses the corresponding end-effector motion relative to its current pose, yielding a controller-aligned action representation.</p>
+            <div class="method-relation" aria-label="Relationship between World Flow and Ego Trajectory">
+              <div><strong>World Flow</strong><span>Transferable task motion</span></div>
+              <span class="method-relation-link">SE(3)<small>conjugation</small></span>
+              <div><strong>Ego Trajectory</strong><span>Executable local motion</span></div>
+            </div>
+            <p class="method-detail-note">The conjugate transformation makes them geometrically consistent views of one motion, allowing task intent learned from one demonstrator to be executed by another embodiment.</p>
+          </div>
+          <figure class="method-detail-media">
+            <video class="method-detail-video" controls muted loop playsinline preload="metadata" poster="media/posters/umr-method-umr.jpg">
+              <source src="media/videos/umr-method-umr.mp4" type="video/mp4">
+            </video>
+            <figcaption>UMR representation overview · excerpt from 00:20–00:37</figcaption>
+          </figure>
+        </section>
+
+        <section class="method-detail-panel method-detail-panel--pipeline" id="method-panel-wepvla" role="tabpanel"
+          aria-labelledby="method-tab-wepvla" hidden>
+          <div class="method-detail-copy">
+            <span class="method-detail-kicker">World–Ego Point VLA</span>
+            <h3>WEPVLA turns UMR into a compact end-to-end policy.</h3>
+            <p>A dual-stream Point Action Adapter encodes World Flow and Ego Trajectory under their respective geometric supervision. Both streams are fused in a shared Point Action Expert that generates transferable task motion and executable actions jointly.</p>
+            <ul class="method-detail-list">
+              <li>Lite Point Encoder for point-cloud observations</li>
+              <li>Dedicated World Flow and Ego Trajectory branches</li>
+              <li>Joint denoising, with Ego actions executed by the robot</li>
+            </ul>
+          </div>
+          <figure class="method-detail-media method-detail-media--pipeline">
+            <img src="media/umr-wepvla-pipeline.png" alt="WEPVLA pipeline from heterogeneous demonstrations through representation alignment, co-training, and deployment">
+            <figcaption>WEPVLA pipeline · adapted from Fig. 2 of the paper</figcaption>
+          </figure>
+        </section>
+
+        <section class="method-detail-panel" id="method-panel-des" role="tabpanel" aria-labelledby="method-tab-des" hidden>
+          <div class="method-detail-copy">
+            <span class="method-detail-kicker">Data-Efficient Strategy</span>
+            <h3>Expand limited demonstrations through stage-aware 3D editing.</h3>
+            <p>DES edits task-relevant object configurations at the point-cloud level according to the current interaction stage. It creates diverse training configurations while preserving demonstrated contact and relative interaction geometry.</p>
+            <ul class="method-detail-list">
+              <li>Identifies task stages and interaction-relevant objects</li>
+              <li>Perturbs object configurations directly in 3D</li>
+              <li>Retains feasible contact geometry for reliable supervision</li>
+            </ul>
+          </div>
+          <figure class="method-detail-media">
+            <video class="method-detail-video" controls muted loop playsinline preload="metadata" poster="media/posters/umr-method-des.jpg">
+              <source src="media/videos/umr-method-des.mp4" type="video/mp4">
+            </video>
+            <figcaption>DES augmentation overview · excerpt from 01:16–01:22</figcaption>
+          </figure>
+        </section>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section experiment-section" id="experiment">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Experiment</h2>
+
+      <section class="experiment-subsection" id="experiment-setting" aria-labelledby="experiment-setting-title">
+        <header class="experiment-subsection-header">
+          <div>
+            <h3 class="title is-4" id="experiment-setting-title">Settings</h3>
+          </div>
+        </header>
+        <div class="experiment-overview-board">
+          <section class="overview-column overview-column--simulation" aria-labelledby="simulation-overview-title">
+            <header class="overview-column-header">
+              <span class="overview-eyebrow">Simulation</span>
+              <h4 id="simulation-overview-title">Benchmark Task Settings</h4>
+            </header>
+            <div class="simulation-overview-stack">
+              <figure class="overview-figure">
+                <img src="media/umr-rlbench-tasks.png" alt="Overview of the ten RLBench manipulation tasks">
+                <figcaption><strong>RLBench</strong><span>10 manipulation tasks</span></figcaption>
+              </figure>
+              <figure class="overview-figure">
+                <img src="media/umr-libero-tasks.png" alt="Overview of the four LIBERO task suites">
+                <figcaption><strong>LIBERO</strong><span>4 task suites · 40 tasks</span></figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="overview-column overview-column--real" aria-labelledby="real-overview-title">
+            <header class="overview-column-header">
+              <span class="overview-eyebrow">Real World</span>
+              <h4 id="real-overview-title">Cross-Condition Settings</h4>
+            </header>
+            <figure class="overview-figure overview-figure--real">
+              <img src="media/umr-real-setting.png" alt="UMR real-world robot setups and six evaluation settings">
+              <figcaption><strong>Real-World Setting</strong><span>Human-to-robot transfer without robot demonstrations</span></figcaption>
+            </figure>
+            <div class="real-setting-facts" aria-label="Real-world evaluation summary">
+              <div><strong>2</strong><span>Robot<br>embodiments</span></div>
+              <div><strong>2</strong><span>Tabletop<br>scenes</span></div>
+              <div><strong>3</strong><span>Gripper<br>configurations</span></div>
+              <div><strong>6</strong><span>Evaluation<br>settings</span></div>
+            </div>
+          </section>
+        </div>
+
+        <div class="setting-video-grid">
+          <article class="setting-video-panel setting-video-selector" id="setting-simulation">
+            <header class="setting-video-header">
+              <span class="overview-eyebrow">Simulation</span>
+              <h4>Task Demonstrations</h4>
+            </header>
+            <div class="setting-player-shell">
+              <video class="setting-video" controls muted playsinline preload="metadata"
+                poster="media/posters/rlbench-close_box.jpg">
+                <source src="media/videos/rlbench/episode_000_close_box.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="setting-video-copy">
+              <strong data-setting-title>RLBench · Close Box</strong>
+              <span data-setting-description>Articulated-object manipulation</span>
+            </div>
+            <div class="setting-carousel">
+              <button class="setting-arrow" type="button" data-direction="prev" aria-label="Previous simulation task">‹</button>
+              <div class="setting-thumbs" role="tablist" aria-label="Simulation task videos">
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/rlbench/episode_000_close_box.mp4"
+                  data-poster="media/posters/rlbench-close_box.jpg" data-title="RLBench · Close Box"
+                  data-description="Articulated-object manipulation">
+                  <img src="media/posters/rlbench-close_box.jpg" alt="Close Box video thumbnail"><span>Close Box</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/rlbench/episode_100_close_laptop_lid.mp4"
+                  data-poster="media/posters/rlbench-close_laptop_lid.jpg" data-title="RLBench · Close Laptop Lid"
+                  data-description="Articulated-object manipulation">
+                  <img src="media/posters/rlbench-close_laptop_lid.jpg" alt="Close Laptop Lid video thumbnail"><span>Close Laptop</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/rlbench/episode_200_toilet_seat_down.mp4"
+                  data-poster="media/posters/rlbench-toilet_seat_down.jpg" data-title="RLBench · Toilet Seat Down"
+                  data-description="Articulated-object manipulation">
+                  <img src="media/posters/rlbench-toilet_seat_down.jpg" alt="Toilet Seat Down video thumbnail"><span>Toilet Seat</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/rlbench/episode_300_sweep_dirt_to_dustpan.mp4"
+                  data-poster="media/posters/rlbench-sweep_dirt_to_dustpan.jpg" data-title="RLBench · Sweep to Dustpan"
+                  data-description="Coordinated tool use">
+                  <img src="media/posters/rlbench-sweep_dirt_to_dustpan.jpg" alt="Sweep to Dustpan video thumbnail"><span>Sweep</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/rlbench/episode_400_close_fridge.mp4"
+                  data-poster="media/posters/rlbench-close_fridge.jpg" data-title="RLBench · Close Fridge"
+                  data-description="Articulated-object manipulation">
+                  <img src="media/posters/rlbench-close_fridge.jpg" alt="Close Fridge video thumbnail"><span>Close Fridge</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/rlbench/episode_500_put_the_phone_on_the_base.mp4"
+                  data-poster="media/posters/rlbench-put_the_phone_on_the_base.jpg" data-title="RLBench · Phone on Base"
+                  data-description="Precise grasp and placement">
+                  <img src="media/posters/rlbench-put_the_phone_on_the_base.jpg" alt="Phone on Base video thumbnail"><span>Phone on Base</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/rlbench/episode_600_take_umbrella_out_of_umbrella_stand.mp4"
+                  data-poster="media/posters/rlbench-take_umbrella_out_of_umbrella_stand.jpg" data-title="RLBench · Umbrella Out"
+                  data-description="Grasp manipulation">
+                  <img src="media/posters/rlbench-take_umbrella_out_of_umbrella_stand.jpg" alt="Umbrella Out video thumbnail"><span>Umbrella Out</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/rlbench/episode_700_take_frame_off_hanger.mp4"
+                  data-poster="media/posters/rlbench-take_frame_off_hanger.jpg" data-title="RLBench · Frame off Hanger"
+                  data-description="Grasp manipulation">
+                  <img src="media/posters/rlbench-take_frame_off_hanger.jpg" alt="Frame off Hanger video thumbnail"><span>Frame off</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/rlbench/episode_800_stack_wine_bottle.mp4"
+                  data-poster="media/posters/rlbench-stack_wine_bottle.jpg" data-title="RLBench · Stack Wine Bottle"
+                  data-description="Precise object placement">
+                  <img src="media/posters/rlbench-stack_wine_bottle.jpg" alt="Stack Wine Bottle video thumbnail"><span>Stack Wine</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/rlbench/episode_900_water_plant.mp4"
+                  data-poster="media/posters/rlbench-water_plant.jpg" data-title="RLBench · Water Plant"
+                  data-description="Coordinated tool use">
+                  <img src="media/posters/rlbench-water_plant.jpg" alt="Water Plant video thumbnail"><span>Water Plant</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/dataset-libero-image-vflip.mp4" data-poster="media/posters/setting-libero-image-vflip.jpg"
+                  data-title="LIBERO · Four Task Setting" data-description="Spatial, Object, Goal, and Long-Horizon tasks">
+                  <img src="media/posters/setting-libero-image-vflip.jpg" alt="LIBERO task settings video thumbnail"><span>LIBERO</span>
+                </button>
+              </div>
+              <button class="setting-arrow" type="button" data-direction="next" aria-label="Next simulation task">›</button>
+            </div>
+            <div class="setting-pagination" aria-label="Simulation video pagination"></div>
+          </article>
+
+          <article class="setting-video-panel setting-video-selector" id="setting-real">
+            <header class="setting-video-header">
+              <span class="overview-eyebrow">Real World</span>
+              <h4>Task Demonstrations</h4>
+            </header>
+            <div class="setting-player-shell">
+              <video class="setting-video" controls muted playsinline preload="metadata"
+                poster="media/posters/real-cube.jpg">
+                <source src="media/videos/setting-real-cube.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="setting-video-copy">
+              <strong data-setting-title>Cube Stacking</strong>
+              <span data-setting-description>Real-world human demonstration for cube stacking</span>
+            </div>
+            <div class="setting-carousel">
+              <button class="setting-arrow" type="button" data-direction="prev" aria-label="Previous real-world setting">‹</button>
+              <div class="setting-thumbs" role="tablist" aria-label="Real-world task-setting videos">
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/setting-real-cube.mp4" data-poster="media/posters/real-cube.jpg"
+                  data-title="Cube Stacking" data-description="Real-world human demonstration for cube stacking">
+                  <img src="media/posters/real-cube.jpg" alt="Cube stacking thumbnail"><span>Cube Stacking</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/setting-real-fold-web.mp4" data-poster="media/posters/real-fold.jpg"
+                  data-title="Towel Folding" data-description="Real-world human demonstration for deformable-object manipulation">
+                  <img src="media/posters/real-fold.jpg" alt="Towel folding thumbnail"><span>Towel Folding</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/setting-real-trash-sweep-web.mp4?v=20260925-1" data-poster="media/posters/real-trash-sweep.jpg?v=20260925-1"
+                  data-title="Trash Sweeping" data-description="Real-world tool-use demonstration">
+                  <img src="media/posters/real-trash-sweep.jpg?v=20260925-1" alt="Trash sweeping"><span>Trash Sweeping</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/setting-real-mug-nominal.mp4" data-poster="media/posters/real-mug-nominal.jpg"
+                  data-title="Mug Rack · Nominal" data-description="Nominal real-world mug-racking demonstration">
+                  <img src="media/posters/real-mug-nominal.jpg" alt="Nominal mug-racking thumbnail"><span>Mug · Nominal</span>
+                </button>
+                <button class="setting-thumb" type="button" role="tab" aria-selected="false"
+                  data-video="media/videos/setting-real-mug-recovery.mp4" data-poster="media/posters/real-mug-recovery.jpg"
+                  data-title="Mug Rack · Recovery" data-description="Real-world recovery demonstration for mug racking">
+                  <img src="media/posters/real-mug-recovery.jpg" alt="Mug-racking recovery thumbnail"><span>Mug · Recovery</span>
+                </button>
+              </div>
+              <button class="setting-arrow" type="button" data-direction="next" aria-label="Next real-world setting">›</button>
+            </div>
+            <div class="setting-pagination" aria-label="Real-world video pagination"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experiment-subsection" id="experiment-results" aria-labelledby="experiment-results-title">
+        <header class="experiment-subsection-header">
+          <div>
+            <h3 class="title is-4" id="experiment-results-title">Results</h3>
+          </div>
+        </header>
+        <h4 class="title is-4 has-text-centered result-subtitle">Simulation Benchmarks</h4>
+        <p class="content has-text-justified">
+        WEPVLA instantiates UMR as a compact 0.5B-parameter point-cloud VLA. Both World Flow and Ego Trajectory are
+        jointly denoised at inference, while only the locally executable Ego action chunk is sent to the robot.
+      </p>
+      <div class="results-grid">
+        <article class="result-card">
+          <span class="result-kicker">RLBench</span>
+          <strong class="result-number">85.7%</strong>
+          <p>Mean success across 10 tasks, outperforming PointACT (82.3%) while using a smaller 0.5B model.</p>
+        </article>
+        <article class="result-card">
+          <span class="result-kicker">LIBERO</span>
+          <strong class="result-number">97.5%</strong>
+          <p>Average success across Spatial, Object, Goal, and Long-Horizon suites with one policy trained on all 40 tasks.</p>
+        </article>
+        <article class="result-card">
+          <span class="result-kicker">Representation</span>
+          <strong class="result-number">World + Ego</strong>
+          <p>World Flow captures transferable task motion; Ego Trajectory provides executable robot-local control.</p>
+        </article>
+      </div>
+      <div class="table-container result-table-wrap">
+        <table class="table is-fullwidth is-striped result-table">
+          <thead>
+            <tr>
+              <th>Benchmark</th>
+              <th>Model</th>
+              <th>Model Size</th>
+              <th>Mean / Avg. Success</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>RLBench 10 tasks</td><td>HybridVLA</td><td>7B</td><td>74.0</td></tr>
+            <tr><td>RLBench 10 tasks</td><td>PointACT</td><td>3B</td><td>82.3</td></tr>
+            <tr><td>RLBench 10 tasks</td><td><strong>WEPVLA (Ours)</strong></td><td>0.5B</td><td><strong>85.7</strong></td></tr>
+            <tr><td>LIBERO 4 suites</td><td>PointACT</td><td>3B</td><td>96.0</td></tr>
+            <tr><td>LIBERO 4 suites</td><td>OpenVLA-OFT</td><td>7B</td><td>96.8</td></tr>
+            <tr><td>LIBERO 4 suites</td><td><strong>WEPVLA (Ours)</strong></td><td>0.5B</td><td><strong>97.5</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h4 class="title is-4 has-text-centered result-subtitle">Real-World Transfer</h4>
+      <div class="table-container result-table-wrap">
+        <table class="table is-fullwidth is-striped result-table">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Training Data</th>
+              <th>Cross-Environment</th>
+              <th>Cross-Embodiment</th>
+              <th>Cross-Setup</th>
+              <th>Tasks I–VI Avg.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>HumanEgo</td><td>Human only, ≈10 min/task</td><td>70.0</td><td>60.8</td><td>58.3</td><td>60.8</td></tr>
+            <tr><td><strong>WEPVLA (Ours)</strong></td><td>Human only, ≈10 min/task</td><td><strong>95.0</strong></td><td><strong>91.7</strong></td><td><strong>90.0</strong></td><td><strong>91.7</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="results-grid">
+        <article class="result-card">
+          <span class="result-kicker">Real-World Transfer</span>
+          <strong class="result-number">91.7%</strong>
+          <p>Average across six settings with no robot demonstrations, versus 60.8% for HumanEgo.</p>
+        </article>
+        <article class="result-card">
+          <span class="result-kicker">Human Data</span>
+          <strong class="result-number">≈10 min</strong>
+          <p>Per task: 100 human demonstrations, with DES generating 500 additional episodes.</p>
+        </article>
+        <article class="result-card">
+          <span class="result-kicker">Data Scaling</span>
+          <strong class="result-number">82% → 96%</strong>
+          <p>Long-6/Long-8 average when scaling from 100 to 14,300 heterogeneous episodes.</p>
+        </article>
+      <!-- </div>
+        <h4 class="title is-4 has-text-centered qualitative-results-title">Evaluation Videos</h4>
+        <p class="content has-text-justified" id="experiments-intro">UMR targets long-horizon manipulation under embodiment changes, spatial perturbations, and contact-rich interactions.</p>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <div class="box experiment-card has-text-centered">
+              <h5 class="title is-5">Zero-Shot Transfer Trials</h5>
+              <video autoplay class="experiment-video" controls loop muted playsinline>
+                <source src="media/videos/umr-retry-alltime-vflip.mp4" type="video/mp4">
+              </video>
+              <video autoplay class="experiment-video" controls loop muted playsinline>
+                <source src="media/videos/umr-retry1-vflip.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="box experiment-card has-text-centered">
+              <h5 class="title is-5">Strict Judge Rollouts</h5>
+              <video autoplay class="experiment-video" controls loop muted playsinline>
+                <source src="media/videos/umr-agentview-0-vflip.mp4" type="video/mp4">
+              </video>
+              <video autoplay class="experiment-video" controls loop muted playsinline>
+                <source src="media/videos/umr-agentview-1-vflip.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="box experiment-card has-text-centered">
+              <h5 class="title is-5">Spatial and Viewpoint Robustness</h5>
+              <video autoplay class="experiment-video" controls loop muted playsinline>
+                <source src="media/videos/umr-agentview-2-vflip.mp4" type="video/mp4">
+              </video>
+              <video autoplay class="experiment-video" controls loop muted playsinline>
+                <source src="media/videos/umr-trashsweep-disturbance-web.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="box experiment-card has-text-centered">
+              <h5 class="title is-5">Data Filtering and Failure Analysis</h5>
+              <video autoplay class="experiment-video" controls loop muted playsinline>
+                <source src="media/umr-rh20t-data-filter-web.mp4" type="video/mp4">
+              </video>
+              <video autoplay class="experiment-video" controls loop muted playsinline>
+                <source src="media/videos/umr-failure-attach-fall-vflip.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </div>
+  </section>
+
+  <section class="section" id="dataset-media">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Heterogeneous Demonstration Gallery</h2>
+      <p class="content has-text-justified">
+        The V10 scaling study combines heterogeneous demonstrations from RH20T, LIBERO, and RLBench with egocentric
+        and exocentric real-world observations. The Data-Efficient Strategy further expands task-relevant object
+        configurations through stage-aware point-cloud editing while preserving interaction geometry.
+      </p>
+      <div class="media-grid">
+        <article class="media-card">
+          <video autoplay muted loop playsinline controls preload="metadata"><source src="media/videos/dataset-rh20t.mp4" type="video/mp4"></video>
+          <h3>RH20T</h3>
+          <p>Real RGB-D manipulation demonstrations, including pressing, napkin pulling, and drawer opening.</p>
+        </article>
+        <article class="media-card">
+          <video autoplay muted loop playsinline controls preload="metadata"><source src="media/videos/dataset-libero-image-vflip.mp4" type="video/mp4"></video>
+          <h3>LIBERO</h3>
+          <p>Spatial, object, goal, and long-horizon tasks reconstructed as RGB-D demonstrations.</p>
+        </article>
+        <article class="media-card">
+          <video autoplay muted loop playsinline controls preload="metadata"><source src="media/videos/dataset-rlbench.mp4" type="video/mp4"></video>
+          <h3>RLBench</h3>
+          <p>Simulation skills spanning articulated objects, grasp manipulation, tool use, and watering.</p>
+        </article>
+        <article class="media-card">
+          <video autoplay muted loop playsinline controls preload="metadata"><source src="media/videos/gallery-egocentric-output.mp4" type="video/mp4"></video>
+          <h3>Egocentric</h3>
+          <p>First-person human manipulation demonstrations captured from a body-aligned viewpoint.</p>
+        </article>
+        <article class="media-card">
+          <video autoplay muted loop playsinline controls preload="metadata"><source src="media/videos/gallery-exocentric.mp4" type="video/mp4"></video>
+          <h3>Exocentric</h3>
+          <p>Third-person observations of the same manipulation setting from an external camera viewpoint.</p>
+        </article>
+        <article class="media-card">
+          <video autoplay muted loop playsinline controls preload="metadata"><source src="media/videos/gallery-des.mp4" type="video/mp4"></video>
+          <h3>Data Efficient Strategy</h3>
+          <p>Stage-aware point-cloud editing generates diverse object configurations while preserving interaction geometry.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="interactive-failure-shell">
+  <section class="section" id="interactive-results">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Interactive Results</h2>
+
+      <div class="interactive-instructions">
+        <div class="interactive-instructions-body">
+          <p id="interactive-intro">Pick a scene below to view RGB-D inputs, prediction, and ground truth.</p>
+          <ul>
+            <li><strong>Policy:</strong> WEPVLA learns coupled World Flow and Ego Trajectory action chunks.</li>
+            <li><strong>Inputs:</strong> RH20T RGB-D observations and <span
+                class="interactive-highlight-magenta">virtual gripper trajectories</span>.</li>
+            <li><strong>Outputs:</strong> <span class="interactive-highlight-rainbow">single-view filtered point clouds</span> aligned with multiview references.</li>
+          </ul>
+
+          <div class="interactive-row" id="interactive-row-droid">
+            <div class="interactive-left-label">UMR RH20T</div>
+            <div class="interactive-right">
+              <div class="interactive-carousel" id="interactive-carousel-droid" role="region">
+                <button aria-label="Previous interactive sample" class="interactive-arrow" data-direction="prev"
+                  type="button">‹</button>
+                <div class="interactive-thumbs" id="interactive-thumb-row-droid" role="tablist">
+                  <button class="interactive-thumb" type="button" aria-label="cfg2 / episode 1" aria-pressed="false"
+                    data-base="interactive/umr-scenes/scene-01" data-label="cfg2 / episode 1"
+                    data-camera-position="0.85,-1.05,0.75" data-camera-lookat="0.00,0.00,0.10"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/umr-scenes/scene-01/cameras-rgb/cam0.png" alt="cfg2 / episode 1 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="cfg2 / episode 2" aria-pressed="false"
+                    data-base="interactive/umr-scenes/scene-02" data-label="cfg2 / episode 2"
+                    data-camera-position="0.85,-1.05,0.75" data-camera-lookat="0.00,0.00,0.10"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/umr-scenes/scene-02/cameras-rgb/cam0.png" alt="cfg2 / episode 2 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="cfg3" aria-pressed="false"
+                    data-base="interactive/umr-scenes/scene-03" data-label="cfg3"
+                    data-camera-position="0.85,-1.05,0.75" data-camera-lookat="0.00,0.00,0.10"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/umr-scenes/scene-03/cameras-rgb/cam0.png" alt="cfg3 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="cfg4" aria-pressed="false"
+                    data-base="interactive/umr-scenes/scene-04" data-label="cfg4"
+                    data-camera-position="0.85,-1.05,0.75" data-camera-lookat="0.00,0.00,0.10"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/umr-scenes/scene-04/cameras-rgb/cam0.png" alt="cfg4 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="cfg5" aria-pressed="false"
+                    data-base="interactive/umr-scenes/scene-05" data-label="cfg5"
+                    data-camera-position="0.85,-1.05,0.75" data-camera-lookat="0.00,0.00,0.10"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/umr-scenes/scene-05/cameras-rgb/cam0.png" alt="cfg5 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="cfg6" aria-pressed="false"
+                    data-base="interactive/umr-scenes/scene-06" data-label="cfg6"
+                    data-camera-position="0.85,-1.05,0.75" data-camera-lookat="0.00,0.00,0.10"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/umr-scenes/scene-06/cameras-rgb/cam0.png" alt="cfg6 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="cfg7" aria-pressed="false"
+                    data-base="interactive/umr-scenes/scene-07" data-label="cfg7"
+                    data-camera-position="0.85,-1.05,0.75" data-camera-lookat="0.00,0.00,0.10"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/umr-scenes/scene-07/cameras-rgb/cam0.png" alt="cfg7 thumbnail">
+                  </button>
+                </div>
+                <button aria-label="Next interactive sample" class="interactive-arrow" data-direction="next"
+                  type="button">›</button>
+              </div>
+              <div class="interactive-pagination" id="interactive-dots-droid"></div>
+            </div>
+          </div>
+
+          <div class="interactive-row is-hidden" id="interactive-row-b1k">
+            <div class="interactive-left-label">BEHAVIOR (simulated)</div>
+            <div class="interactive-right">
+              <div class="interactive-carousel" id="interactive-carousel-b1k" role="region">
+                <button aria-label="Previous interactive sample" class="interactive-arrow" data-direction="prev"
+                  type="button">‹</button>
+                <div class="interactive-thumbs" id="interactive-thumb-row-b1k" role="tablist">
+                  <button class="interactive-thumb" type="button" aria-label="scene-01" aria-pressed="false"
+                    data-base="interactive/b1k-scenes/scene-01" data-label="scene-01"
+                    data-camera-position="0.65,0.60,0.20" data-camera-lookat="0.00,0.00,0.00"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/b1k-scenes/scene-01/cameras-rgb/cam0.png" alt="scene-01 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="scene-02" aria-pressed="false"
+                    data-base="interactive/b1k-scenes/scene-02" data-label="scene-02"
+                    data-camera-position="-0.30,0.40,0.40" data-camera-lookat="0.00,0.10,0.35"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/b1k-scenes/scene-02/cameras-rgb/cam0.png" alt="scene-02 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="scene-03" aria-pressed="false"
+                    data-base="interactive/b1k-scenes/scene-03" data-label="scene-03"
+                    data-camera-position="-0.30,1.20,0.80" data-camera-lookat="0.00,0.00,0.00"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/b1k-scenes/scene-03/cameras-rgb/cam0.png" alt="scene-03 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="scene-04" aria-pressed="false"
+                    data-base="interactive/b1k-scenes/scene-04" data-label="scene-04"
+                    data-camera-position="-0.25,0.00,1.00" data-camera-lookat="0.00,0.00,0.20"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/b1k-scenes/scene-04/cameras-rgb/cam0.png" alt="scene-04 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="scene-05" aria-pressed="false"
+                    data-base="interactive/b1k-scenes/scene-05" data-label="scene-05"
+                    data-camera-position="0.60,0.00,0.50" data-camera-lookat="0.00,0.00,0.30"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/b1k-scenes/scene-05/cameras-rgb/cam0.png" alt="scene-05 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="scene-06" aria-pressed="false"
+                    data-base="interactive/b1k-scenes/scene-06" data-label="scene-06"
+                    data-camera-position="0.00,1.30,1.30" data-camera-lookat="0.00,0.00,0.50"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/b1k-scenes/scene-06/cameras-rgb/cam0.png" alt="scene-06 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="scene-07" aria-pressed="false"
+                    data-base="interactive/b1k-scenes/scene-07" data-label="scene-07"
+                    data-camera-position="-0.45,0.50,1.40" data-camera-lookat="0.00,0.00,0.85"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/b1k-scenes/scene-07/cameras-rgb/cam0.png" alt="scene-07 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="scene-08" aria-pressed="false"
+                    data-base="interactive/b1k-scenes/scene-08" data-label="scene-08"
+                    data-camera-position="1.00,1.00,1.30" data-camera-lookat="0.00,0.00,0.70"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/b1k-scenes/scene-08/cameras-rgb/cam0.png" alt="scene-08 thumbnail">
+                  </button>
+                  <button class="interactive-thumb" type="button" aria-label="scene-09" aria-pressed="false"
+                    data-base="interactive/b1k-scenes/scene-09" data-label="scene-09"
+                    data-camera-position="-0.75,-0.50,0.40" data-camera-lookat="0.00,0.00,0.40"
+                    data-camera-up="0.000,0.000,1.000">
+                    <img src="interactive/b1k-scenes/scene-09/cameras-rgb/cam0.png" alt="scene-09 thumbnail">
+                  </button>
+                </div>
+                <button aria-label="Next interactive sample" class="interactive-arrow" data-direction="next"
+                  type="button">›</button>
+              </div>
+              <div class="interactive-pagination" id="interactive-dots-b1k"></div>
+            </div>
+          </div>
+
+          <p class="interactive-note" id="interactive-note"><strong>NOTE:</strong> Prediction shows single-view filtering; the reference viewer shows multiview reconstruction.
+          </p>
+        </div>
+      </div>
+
+      <div class="interactive-panel" id="interactive-panel">
+        <div class="interactive-card interactive-card--inputs" id="interactive-inputs-droid">
+          <h3 class="title is-5">RH20T Frame and Review Projection
+            <span class="hint-banner hint-banner--zoom">Hover to zoom</span>
+          </h3>
+          <div class="interactive-image-grid">
+            <figure><img data-role="rgb0" src="interactive/umr-scenes/scene-01/cameras-rgb/cam0.png">
+              <figcaption>RGB cam0</figcaption>
+            </figure>
+            <figure><img data-role="depth0" src="interactive/umr-scenes/scene-01/cameras-depth/cam0.png">
+              <figcaption>Projection comparison</figcaption>
+            </figure>
+            <figure><img data-role="rgb1" src="interactive/umr-scenes/scene-01/cameras-rgb/cam1.png">
+              <figcaption>Single vs multiview</figcaption>
+            </figure>
+            <figure><img data-role="depth1" src="interactive/umr-scenes/scene-01/cameras-depth/cam1.png">
+              <figcaption>Source RGB</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="interactive-card interactive-card--inputs is-hidden" id="interactive-inputs-b1k">
+          <h3 class="title is-5">RH20T Frame and Review Projection
+            <span class="hint-banner hint-banner--zoom">Hover to zoom</span>
+          </h3>
+          <div class="interactive-image-grid interactive-image-grid--b1k">
+            <figure><img data-role="rgb0" src="interactive/b1k-scenes/scene-01/cameras-rgb/cam0.png">
+              <figcaption>RGB cam0</figcaption>
+            </figure>
+            <figure><img data-role="rgb1" src="interactive/b1k-scenes/scene-01/cameras-rgb/cam1.png">
+              <figcaption>RGB cam1</figcaption>
+            </figure>
+            <figure><img data-role="rgb2" src="interactive/b1k-scenes/scene-01/cameras-rgb/cam2.png">
+              <figcaption>RGB cam2</figcaption>
+            </figure>
+            <figure><img data-role="depth0" src="interactive/b1k-scenes/scene-01/cameras-depth/cam0.png">
+              <figcaption>Depth cam0</figcaption>
+            </figure>
+            <figure><img data-role="depth1" src="interactive/b1k-scenes/scene-01/cameras-depth/cam1.png">
+              <figcaption>Depth cam1</figcaption>
+            </figure>
+            <figure><img data-role="depth2" src="interactive/b1k-scenes/scene-01/cameras-depth/cam2.png">
+              <figcaption>Depth cam2</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="interactive-card interactive-card--viewer">
+          <h3 class="title is-5"><span class="interactive-highlight-rainbow">Single-View </span>
+            Prediction
+            <span class="hint-banner hint-banner--move is-hidden" data-viser-hint="interactive-pred">Click and move
+              me</span>
+          </h3>
+          <div class="interactive-viewer">
+            <div class="viser-banner viser-banner--interactive is-placeholder">choose a scene above to view interactive
+              visualization</div>
+            <iframe allow="fullscreen xr-spatial-tracking" class="interactive-iframe" id="interactive-pred"
+              loading="lazy" title="Prediction viewer"></iframe>
+          </div>
+        </div>
+
+        <div class="interactive-card interactive-card--viewer">
+          <h3 class="title is-5">Multiview Reference
+            <span class="hint-banner hint-banner--move is-hidden" data-viser-hint="interactive-gt">Click and move
+              me</span>
+          </h3>
+          <div class="interactive-viewer">
+            <div class="viser-banner viser-banner--interactive is-placeholder">choose a scene above to view interactive
+              visualization</div>
+            <iframe allow="fullscreen xr-spatial-tracking" class="interactive-iframe" id="interactive-gt" loading="lazy"
+              title="Ground truth viewer"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <section class="section dataset-section is-hidden" id="dataset">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered" id="dataset-title">World-Ego Point Cloud Review</h2>
+      <p class="dataset-intro" id="dataset-intro-1">UMR review samples are served through the interactive section.</p>
+      <p class="dataset-intro" id="dataset-intro-2">This hidden template can be re-enabled when final annotation assets are available.</p>
+    </div>
+  </section>
+
+  <section class="section failure-cases-section" id="failure-cases">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Failure Cases</h2>
+      <p class="failure-cases-intro">Select a case to inspect the rollout and the mechanism behind the observed failure.</p>
+
+      <article class="failure-carousel" id="failure-carousel">
+        <div class="failure-stage">
+          <div class="failure-player-shell">
+            <video class="failure-video" controls loop muted playsinline preload="metadata"
+              poster="media/posters/failure-timeout-vflip.jpg">
+              <source src="media/videos/umr-retry-alltime-vflip.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="failure-analysis" aria-live="polite">
+            <span class="failure-category" data-failure-category>Episode Horizon</span>
+            <h3 data-failure-title>Time-Limit Termination</h3>
+            <p class="failure-summary" data-failure-summary>Repeated recovery attempts consume the remaining control horizon before the terminal condition is reached.</p>
+            <div class="failure-cause">
+              <strong>Why it fails</strong>
+              <p data-failure-explanation>The rollout is stopped by the evaluation time limit rather than an unsafe terminal state. Long recovery sequences therefore appear as failures even while the policy is still making corrective progress.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="failure-selector">
+          <button class="failure-arrow" type="button" data-direction="prev" aria-label="Previous failure case">‹</button>
+          <div class="failure-thumbs" role="tablist" aria-label="Failure case videos">
+            <button class="failure-thumb is-active" type="button" role="tab" aria-selected="true"
+              data-video="media/videos/umr-retry-alltime-vflip.mp4"
+              data-poster="media/posters/failure-timeout-vflip.jpg"
+              data-category="Episode Horizon"
+              data-title="Time-Limit Termination"
+              data-summary="Repeated recovery attempts consume the remaining control horizon before the terminal condition is reached."
+              data-explanation="The rollout is stopped by the evaluation time limit rather than an unsafe terminal state. Long recovery sequences therefore appear as failures even while the policy is still making corrective progress.">
+              <img src="media/posters/failure-timeout-vflip.jpg" alt="Time-limit failure thumbnail">
+              <span><strong>Time Limit</strong><small>Episode horizon</small></span>
+            </button>
+            <button class="failure-thumb" type="button" role="tab" aria-selected="false"
+              data-video="media/videos/umr-failure-attach-fall-vflip.mp4"
+              data-poster="media/posters/failure-contact-loss-vflip.jpg"
+              data-category="Simulation Physics"
+              data-title="Contact Loss and Object Slip"
+              data-summary="An apparently successful attachment is followed by a sudden slip or fall."
+              data-explanation="The simulator briefly loses the contact force that should maintain attachment. The object then slides or falls after an apparently successful interaction, producing an attach-but-fall failure."
+              tabindex="-1">
+              <img src="media/posters/failure-contact-loss-vflip.jpg" alt="Contact loss and object slip thumbnail">
+              <span><strong>Contact Loss</strong><small>Simulator dynamics</small></span>
+            </button>
+            <button class="failure-thumb" type="button" role="tab" aria-selected="false"
+              data-video="media/videos/umr-agentview-1-vflip.mp4"
+              data-poster="media/posters/failure-center-judge-vflip.jpg"
+              data-category="Evaluation Heuristic"
+              data-title="Geometry-Center Distance Mismatch"
+              data-summary="A center-distance rule disagrees with the physically meaningful cup-body placement."
+              data-explanation="The mug handle shifts the mesh geometric center away from the center of the cup wall. A strict center-distance test can therefore misjudge a physically reasonable placement because it measures the wrong reference point."
+              tabindex="-1">
+              <img src="media/posters/failure-center-judge-vflip.jpg" alt="Mug geometry-center judgment thumbnail">
+              <span><strong>Center Mismatch</strong><small>Judge heuristic</small></span>
+            </button>
+          </div>
+          <button class="failure-arrow" type="button" data-direction="next" aria-label="Next failure case">›</button>
+        </div>
+        <div class="failure-pagination" aria-label="Failure case pagination"></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section acknowledgements-section" id="acknowledgements">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Acknowledgements</h2>
+      <p class="acknowledgements-copy">We thank the colleagues who provided valuable feedback on the UMR formulation and assisted with data collection, system integration, and real-world robot evaluations. We are also grateful to the creators and maintainers of RLBench, LIBERO, RH20T, SmolVLA, and Viser, as well as the broader open-source robotics community, for the benchmarks, datasets, model components, and visualization tools that supported this work.</p>
+    </div>
+  </section>
+
+</body>
+
+</html>
