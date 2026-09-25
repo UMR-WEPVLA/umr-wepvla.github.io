@@ -48,6 +48,7 @@ window.addEventListener('DOMContentLoaded', function () {
     if(!taskSelect||!rolloutSelect||!shuffle||!video)return;
     var base='media/videos/eval_videos/';
     var groups=[
+      {key:'franka-cube-stacking',embodiment:'Franka',task:'Cube Stacking',files:['FrankaCubeStacking_EVAL_1~1.mp4','FrankaCubeStacking_EVAL_2~1.mp4','FrankaCubeStacking_EVAL_3~1.mp4','FrankaCubeStacking_EVAL_4~1.mp4','FrankaCubeStacking_EVAL_5~1.mp4']},
       {key:'franka-mug-rack',embodiment:'Franka',task:'Mug Rack',files:['FrankaMugRack_EVAL_1~2.mp4','FrankaMugRack_EVAL_2~2.mp4','FrankaMugRack_EVAL_3~2.mp4','FrankaMugRack_EVAL_4~2.mp4','FrankaMugRack_EVAL_5~2.mp4']},
       {key:'franka-towel-fold',embodiment:'Franka',task:'Towel Folding',files:['FrankaTowelFold_EVAL_1~2.mp4','FrankaTowelFold_EVAL_2~2.mp4','FrankaTowelFold_EVAL_3~2.mp4','FrankaTowelFold_EVAL_4~2.mp4','FrankaTowelFold_EVAL_5~2.mp4']},
       {key:'franka-trash-sweep',embodiment:'Franka',task:'Trash Sweeping',files:['FrankaTrashSweep_EVAL_1~2.mp4','FrankaTrashSweep_EVAL_2~2.mp4','FrankaTrashSweep_EVAL_3~2.mp4','FrankaTrashSweep_EVAL_4~2.mp4','FrankaTrashSweep_EVAL_5~2.mp4']},
