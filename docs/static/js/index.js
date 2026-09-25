@@ -41,6 +41,43 @@ window.addEventListener('DOMContentLoaded', function () {
     var badge=document.createElement('div');badge.className='video-speed-badge';badge.textContent='2x';wrapper.appendChild(badge);
   });
 
+  (function initEvaluationVideos(){
+    var taskSelect=document.getElementById('evaluation-task-select'),rolloutSelect=document.getElementById('evaluation-rollout-select');
+    var shuffle=document.getElementById('evaluation-shuffle'),video=document.getElementById('evaluation-video');
+    var embodiment=document.getElementById('evaluation-embodiment'),taskTitle=document.getElementById('evaluation-task-title'),rolloutLabel=document.getElementById('evaluation-rollout-label');
+    if(!taskSelect||!rolloutSelect||!shuffle||!video)return;
+    var base='media/videos/eval_videos/';
+    var groups=[
+      {key:'franka-mug-rack',embodiment:'Franka',task:'Mug Rack',files:['FrankaMugRack_EVAL_1~2.mp4','FrankaMugRack_EVAL_2~2.mp4','FrankaMugRack_EVAL_3~2.mp4','FrankaMugRack_EVAL_4~2.mp4','FrankaMugRack_EVAL_5~2.mp4']},
+      {key:'franka-towel-fold',embodiment:'Franka',task:'Towel Folding',files:['FrankaTowelFold_EVAL_1~2.mp4','FrankaTowelFold_EVAL_2~2.mp4','FrankaTowelFold_EVAL_3~2.mp4','FrankaTowelFold_EVAL_4~2.mp4','FrankaTowelFold_EVAL_5~2.mp4']},
+      {key:'franka-trash-sweep',embodiment:'Franka',task:'Trash Sweeping',files:['FrankaTrashSweep_EVAL_1~2.mp4','FrankaTrashSweep_EVAL_2~2.mp4','FrankaTrashSweep_EVAL_3~2.mp4','FrankaTrashSweep_EVAL_4~2.mp4','FrankaTrashSweep_EVAL_5~2.mp4']},
+      {key:'piper-cube-stacking',embodiment:'Piper',task:'Cube Stacking',files:['PiperCubeStacking_EVAL_1~2.mp4','PiperCubeStacking_EVAL_2~2.mp4','PiperCubeStacking_EVAL_3~2.mp4','PiperCubeStacking_EVAL_4~2.mp4','Piper_CubeStacking~2.mp4']},
+      {key:'piper-mug-rack',embodiment:'Piper',task:'Mug Rack',files:['PiperMugRack_EVAL_1~2.mp4','PiperMugRack_EVAL_2~2.mp4','PiperMugRack_EVAL_3~2.mp4','PiperMugRack_EVAL_4~2.mp4','PiperMugRack~2.mp4']}
+    ];
+    function groupIndex(){var idx=groups.findIndex(function(group){return group.key===taskSelect.value});return idx<0?0:idx}
+    function fillRollouts(selected){
+      var group=groups[groupIndex()];rolloutSelect.innerHTML='';
+      group.files.forEach(function(_,idx){var option=document.createElement('option');option.value=String(idx);option.textContent='Rollout #'+(idx+1);rolloutSelect.appendChild(option)});
+      rolloutSelect.value=String(Math.max(0,Math.min(selected||0,group.files.length-1)));
+    }
+    function activate(shouldPlay){
+      var group=groups[groupIndex()],idx=Math.max(0,Math.min(Number(rolloutSelect.value)||0,group.files.length-1));
+      var source=video.querySelector('source'),src=base+group.files[idx];video.pause();
+      if(source)source.src=src;else video.src=src;video.load();
+      if(embodiment)embodiment.textContent=group.embodiment;if(taskTitle)taskTitle.textContent=group.task;if(rolloutLabel)rolloutLabel.textContent='Rollout '+(idx+1)+' of '+group.files.length;
+      if(shouldPlay){var play=function(){var promise=video.play();if(promise&&promise.catch)promise.catch(function(){})};if(video.readyState>=2)play();else video.addEventListener('canplay',play,{once:true})}
+    }
+    taskSelect.addEventListener('change',function(){fillRollouts(0);activate(true)});
+    rolloutSelect.addEventListener('change',function(){activate(true)});
+    shuffle.addEventListener('click',function(){
+      var currentGroup=groupIndex(),currentRollout=Number(rolloutSelect.value)||0,total=groups.reduce(function(sum,group){return sum+group.files.length},0),pick=Math.floor(Math.random()*total),cursor=0,nextGroup=0,nextRollout=0;
+      if(total>1&&pick===currentGroup*groups[currentGroup].files.length+currentRollout)pick=(pick+1)%total;
+      for(var i=0;i<groups.length;i++){if(pick<cursor+groups[i].files.length){nextGroup=i;nextRollout=pick-cursor;break}cursor+=groups[i].files.length}
+      taskSelect.value=groups[nextGroup].key;fillRollouts(nextRollout);activate(true);
+    });
+    fillRollouts(0);activate(false);
+  })();
+
   function initSettingVideoSelector(container){
     if(!container)return;
     var video=container.querySelector('.setting-video');

@@ -21,9 +21,9 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-  <link href="./static/css/index.css?v=20260925-21" rel="stylesheet">
+  <link href="./static/css/index.css?v=20260925-22" rel="stylesheet">
   <script src="./config/site-config.js"></script>
-  <script defer src="./static/js/index.js?v=20260925-9"></script>
+  <script defer src="./static/js/index.js?v=20260925-10"></script>
 </head>
 
 <body>
@@ -748,38 +748,34 @@
 
   <section class="section evaluation-videos-section" id="evaluation-videos">
     <div class="container is-max-widescreen">
-      <h4 class="title is-4 has-text-centered qualitative-results-title">Evaluation Videos</h4>
-      <p class="content has-text-justified" id="experiments-intro">UMR targets long-horizon manipulation under embodiment changes, spatial perturbations, and contact-rich interactions.</p>
-      <div class="columns is-multiline">
-        <div class="column is-half">
-          <div class="box experiment-card has-text-centered">
-            <h5 class="title is-5">Zero-Shot Transfer Trials</h5>
-            <video autoplay class="experiment-video" controls loop muted playsinline><source src="media/videos/umr-retry-alltime-vflip.mp4" type="video/mp4"></video>
-            <video autoplay class="experiment-video" controls loop muted playsinline><source src="media/videos/umr-retry1-vflip.mp4" type="video/mp4"></video>
-          </div>
-        </div>
-        <div class="column is-half">
-          <div class="box experiment-card has-text-centered">
-            <h5 class="title is-5">Strict Judge Rollouts</h5>
-            <video autoplay class="experiment-video" controls loop muted playsinline><source src="media/videos/umr-agentview-0-vflip.mp4" type="video/mp4"></video>
-            <video autoplay class="experiment-video" controls loop muted playsinline><source src="media/videos/umr-agentview-1-vflip.mp4" type="video/mp4"></video>
-          </div>
-        </div>
-        <div class="column is-half">
-          <div class="box experiment-card has-text-centered">
-            <h5 class="title is-5">Spatial and Viewpoint Robustness</h5>
-            <video autoplay class="experiment-video" controls loop muted playsinline><source src="media/videos/umr-agentview-2-vflip.mp4" type="video/mp4"></video>
-            <video autoplay class="experiment-video" controls loop muted playsinline><source src="media/videos/umr-trashsweep-disturbance-web.mp4" type="video/mp4"></video>
-          </div>
-        </div>
-        <div class="column is-half">
-          <div class="box experiment-card has-text-centered">
-            <h5 class="title is-5">Data Filtering and Failure Analysis</h5>
-            <video autoplay class="experiment-video" controls loop muted playsinline><source src="media/umr-rh20t-data-filter-web.mp4" type="video/mp4"></video>
-            <video autoplay class="experiment-video" controls loop muted playsinline><source src="media/videos/umr-failure-attach-fall-vflip.mp4" type="video/mp4"></video>
-          </div>
-        </div>
+      <h2 class="title is-3 has-text-centered">Evaluation Videos</h2>
+      <div class="evaluation-controls" role="group" aria-label="Evaluation video controls">
+        <label class="evaluation-select-field">
+          <span>Task type</span>
+          <select id="evaluation-task-select" aria-label="Select evaluation task">
+            <option value="franka-mug-rack">Franka · Mug Rack</option>
+            <option value="franka-towel-fold">Franka · Towel Folding</option>
+            <option value="franka-trash-sweep">Franka · Trash Sweeping</option>
+            <option value="piper-cube-stacking">Piper · Cube Stacking</option>
+            <option value="piper-mug-rack">Piper · Mug Rack</option>
+          </select>
+        </label>
+        <label class="evaluation-select-field">
+          <span>Rollout</span>
+          <select id="evaluation-rollout-select" aria-label="Select evaluation rollout"></select>
+        </label>
+        <button class="evaluation-shuffle" id="evaluation-shuffle" type="button" aria-label="Play a random evaluation video"><span aria-hidden="true">↝</span> Shuffle</button>
       </div>
+      <article class="evaluation-player-card">
+        <header class="evaluation-player-meta" aria-live="polite">
+          <div><span id="evaluation-embodiment">Franka</span><strong id="evaluation-task-title">Mug Rack</strong></div>
+          <span id="evaluation-rollout-label">Rollout 1 of 5</span>
+        </header>
+        <video class="evaluation-video" id="evaluation-video" autoplay controls loop muted playsinline preload="metadata">
+          <source src="media/videos/eval_videos/FrankaMugRack_EVAL_1~2.mp4" type="video/mp4">
+        </video>
+      </article>
+      <p class="evaluation-videos-intro" id="experiments-intro">Select a task and rollout to inspect UMR under different embodiments and real-world manipulation conditions.</p>
     </div>
   </section>
 
