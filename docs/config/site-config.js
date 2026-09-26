@@ -28,8 +28,8 @@ window.PAPER_CONTENT = {
     talk: "#",
     tldr: "#",
     code: "https://github.com/LiuSong-Scrat/UMR.git",
-    results: "#experiment-results",
-    checkpoints: "#"
+    results: "benchmark-results/",
+    checkpoints: "https://pan.baidu.com/s/1mb9H1LpiZQoeJ-i4ojtBgQ?pwd=urbq"
   },
   teaserCaption: "UMR couples embodiment-agnostic World Flow with locally executable Ego Trajectory, enabling a single policy trained on human demonstrations to transfer zero-shot across robot embodiments and deployment conditions.",
   abstractHtml: `General-purpose embodied manipulation requires a unified action representation that generalizes across embodiments and scales with heterogeneous demonstrations. We introduce <strong>Universal Manipulation Representation (UMR)</strong>, which decomposes manipulation into two functionally distinct but geometrically linked components: embodiment-agnostic <strong>World Flow</strong>, describing task-relevant object motion in the world frame, and <strong>Ego Trajectory</strong>, representing end-effector motion relative to its current pose. The two components are coupled by an SE(3) conjugate transformation. We instantiate UMR as <strong>World–Ego Point VLA (WEPVLA)</strong>, a compact 0.5B-parameter point-cloud policy with a dual-stream Point Action Adapter and a shared Point Action Expert. A <strong>Data-Efficient Strategy (DES)</strong> further diversifies object configurations through stage-aware point-cloud editing while preserving demonstrated contact geometry. WEPVLA achieves 85.7% on the 10-task RLBench benchmark and 97.5% across LIBERO's four suites. In real-world experiments, one policy trained with approximately 10 minutes of human demonstrations per task and no robot demonstrations achieves 91.7% average success across six settings, compared with 60.8% for HumanEgo.`,
