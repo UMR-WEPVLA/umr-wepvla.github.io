@@ -21,8 +21,6 @@ window.PAPER_CONTENT = {
     <span class="affiliation-block"><sup>2</sup>Suzhou Artificial Intelligence Laboratory, Suzhou, China.</span>
   `,
   affiliationNoteHtml: `<sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding author.`,
-  venueHtml: `ICRA Submission`,
-  awardHtml: `Zero-shot cross-embodiment manipulation from human demonstrations`,
   links: {
     pdf: "ICRA_UMR_manuscript_V10_Compressed.pdf",
     arxiv: "#",
