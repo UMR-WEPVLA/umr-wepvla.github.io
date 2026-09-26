@@ -1,8 +1,8 @@
 window.PAPER_CONTENT = {
   titleHtml: "UMR: Universal Manipulation Representation",
   authorsHtml: `
-    <span class="author-block"><strong>Song Liu</strong><sup>1,2,*</sup>,</span>
-    <span class="author-block"><strong>Linyi Li</strong><sup>1,2,*</sup></span><br>
+    <span class="author-block">Song Liu<sup>1,2,*</sup>,</span>
+    <span class="author-block">Linyi Li<sup>1,2,*</sup></span>
     <span class="author-block">Yanshun Zhao<sup>1</sup>,</span>
     <span class="author-block">Rxuan Li<sup>1</sup>,</span>
     <span class="author-block">Xinrui Xu<sup>1</sup>,</span>
@@ -17,12 +17,12 @@ window.PAPER_CONTENT = {
     <span class="author-block">Jingrun Chen<sup>1,&dagger;</sup></span>
   `,
   affiliationHtml: `
-    <span class="affiliation-block"><sup>1</sup>University of Science and Technology of China, Hefei, China.</span><br>
-    <span class="affiliation-block"><sup>2</sup>Suzhou Artificial Intelligence Laboratory, Suzhou, China.</span>
+    <span class="affiliation-block"><sup>1</sup>University of Science and Technology of China,</span>
+    <span class="affiliation-block"><sup>2</sup>Suzhou Artificial Intelligence Laboratory.</span>
   `,
   affiliationNoteHtml: `<sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding author.`,
   links: {
-    pdf: "ICRA_UMR_manuscript_V10_Compressed.pdf",
+    pdf: "UMR_Arxiv.pdf",
     arxiv: "#",
     explainer: "#",
     talk: "#",
