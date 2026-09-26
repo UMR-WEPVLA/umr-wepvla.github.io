@@ -30,8 +30,7 @@ window.PAPER_CONTENT = {
     talk: "#",
     tldr: "#",
     code: "https://github.com/LiuSong-Scrat/UMR.git",
-    data1: "data/ply-review/index.html",
-    data2: "media/videos/dataset-manifest.json",
+    results: "#experiment-results",
     checkpoints: "#"
   },
   teaserCaption: "UMR couples embodiment-agnostic World Flow with locally executable Ego Trajectory, enabling a single policy trained on human demonstrations to transfer zero-shot across robot embodiments and deployment conditions.",

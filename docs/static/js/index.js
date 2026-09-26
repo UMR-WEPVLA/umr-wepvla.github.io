@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function () {
   setHtml('teaser-caption',cfg.teaserCaption); setHtml('abstract-copy',cfg.abstractHtml); setHtml('interactive-intro',cfg.interactiveIntroHtml);
   setHtml('interactive-note',cfg.interactiveNoteHtml); setHtml('dataset-title',cfg.datasetTitleHtml); setHtml('dataset-intro-1',cfg.datasetIntro1Html);
   setHtml('dataset-intro-2',cfg.datasetIntro2Html); setHtml('experiments-intro',cfg.experimentsIntroHtml);
-  var links=cfg.links||{}; ['pdf','arxiv','explainer','talk','tldr','code','data1','data2','checkpoints'].forEach(function(k){setHref('link-'+k,links[k]);});
+  var links=cfg.links||{}; ['pdf','arxiv','explainer','talk','tldr','code','results','checkpoints'].forEach(function(k){setHref('link-'+k,links[k]);});
 
   var localWalk=document.getElementById('walkthrough-local'), ytWalk=document.getElementById('walkthrough-youtube');
   if(cfg.walkthroughMode==='youtube' && ytWalk){ if(localWalk)localWalk.classList.add('is-hidden'); ytWalk.classList.remove('is-hidden'); ytWalk.src=cfg.walkthroughYoutubeEmbed||''; }
