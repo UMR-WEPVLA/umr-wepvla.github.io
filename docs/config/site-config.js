@@ -1,10 +1,26 @@
 window.PAPER_CONTENT = {
   titleHtml: "UMR: Universal Manipulation Representation",
   authorsHtml: `
-    <span class="author-block">Anonymous Authors</span>
+    <span class="author-block"><strong>Song Liu</strong><sup>1,2,*</sup>,</span>
+    <span class="author-block"><strong>Linyi Li</strong><sup>1,2,*</sup></span><br>
+    <span class="author-block">Yanshun Zhao<sup>1</sup>,</span>
+    <span class="author-block">Rxuan Li<sup>1</sup>,</span>
+    <span class="author-block">Xinrui Xu<sup>1</sup>,</span>
+    <span class="author-block">Yi Ju<sup>1</sup>,</span>
+    <span class="author-block">Yahui Deng<sup>1</sup>,</span>
+    <span class="author-block">Senge Zhang<sup>1</sup>,</span>
+    <span class="author-block">Guoyu Liu<sup>1</sup>,</span>
+    <span class="author-block">Yixuan Li<sup>1</sup>,</span><br>
+    <span class="author-block">Wuyang Zhang<sup>1,2</sup>,</span>
+    <span class="author-block">Yao Li<sup>1</sup>,</span>
+    <span class="author-block">Congcong Zhu<sup>1,2</sup>,</span>
+    <span class="author-block">Jingrun Chen<sup>1,&dagger;</sup></span>
   `,
-  affiliationHtml: `Anonymous Institution`,
-  affiliationNoteHtml: `Submitted for double-blind review`,
+  affiliationHtml: `
+    <span class="affiliation-block"><sup>1</sup>University of Science and Technology of China, Hefei, China.</span><br>
+    <span class="affiliation-block"><sup>2</sup>Suzhou Artificial Intelligence Laboratory, Suzhou, China.</span>
+  `,
+  affiliationNoteHtml: `<sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding author.`,
   venueHtml: `ICRA Submission`,
   awardHtml: `Zero-shot cross-embodiment manipulation from human demonstrations`,
   links: {
