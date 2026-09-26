@@ -13,7 +13,7 @@ window.PAPER_CONTENT = {
     explainer: "#",
     talk: "#",
     tldr: "#",
-    code: "#",
+    code: "https://github.com/LiuSong-Scrat/UMR.git",
     data1: "data/ply-review/index.html",
     data2: "media/videos/dataset-manifest.json",
     checkpoints: "#"

@@ -194,8 +194,8 @@ window.addEventListener('DOMContentLoaded', function () {
       if(explanation)explanation.textContent=thumb.dataset.explanation||'';
       thumbs.forEach(function(item,i){var selected=i===index;item.classList.toggle('is-active',selected);item.setAttribute('aria-selected',selected?'true':'false');item.tabIndex=selected?0:-1});
       dots.forEach(function(dot,i){dot.classList.toggle('is-active',i===index)});
-      thumb.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
       if(play){
+        thumb.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
         var startPlayback=function(){var promise=video.play();if(promise&&promise.catch)promise.catch(function(){})};
         if(video.readyState>=2)startPlayback();else video.addEventListener('canplay',startPlayback,{once:true});
       }
