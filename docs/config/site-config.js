@@ -13,14 +13,14 @@ window.PAPER_CONTENT = {
     <span class="author-block">Yixuan Li<sup>1</sup>,</span><br>
     <span class="author-block">Wuyang Zhang<sup>1,2</sup>,</span>
     <span class="author-block">Yao Li<sup>1</sup>,</span>
-    <span class="author-block">Congcong Zhu<sup>1,2</sup>,</span>
+    <span class="author-block">Congcong Zhu<sup>1,2,&dagger;</sup>,</span>
     <span class="author-block">Jingrun Chen<sup>1,&dagger;</sup></span>
   `,
   affiliationHtml: `
     <span class="affiliation-block"><sup>1</sup>University of Science and Technology of China,</span>
     <span class="affiliation-block"><sup>2</sup>Suzhou Artificial Intelligence Laboratory.</span>
   `,
-  affiliationNoteHtml: `<sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding author.`,
+  affiliationNoteHtml: `<sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding authors.`,
   links: {
     pdf: "UMR_Arxiv.pdf",
     arxiv: "#",
