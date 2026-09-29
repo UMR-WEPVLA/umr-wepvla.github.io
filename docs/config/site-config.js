@@ -23,7 +23,7 @@ window.PAPER_CONTENT = {
   affiliationNoteHtml: `<sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding authors.`,
   links: {
     pdf: "UMR_Arxiv.pdf",
-    arxiv: "#",
+    arxiv: "https://arxiv.org/pdf/2609.34256",
     explainer: "#",
     talk: "#",
     tldr: "#",
